@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bir İşin Olsun</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="background-overlay position-relative">    <div class="bg-header">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="./img/main_logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><a href=""><img src="./img/main_logo.svg" alt=""></a>
+            </h5>
+            <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body ">
+            <ul class="navbar-nav justify-content-center column-gap-5 flex-grow-1 pe-3">
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Adaylar
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  İş Verenler
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex navbar-nav mt-3 mt-lg-0">
+              <div class="dropdown">
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false" data-bs-auto-close="outside">
+                  Giriş Yap / Üye Ol </button>
+                <form class="dropdown-menu p-4">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Şifre</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Şifre">
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                      <label class="form-check-label" for="dropdownCheck2">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Giriş Yap / Üye Ol</button>
+                </form>
+              </div>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  English
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                  <li><a class="dropdown-item" href="#">Русский</a></li>
+                  <li><a class="dropdown-item" href="#">Español</a></li>
+                </ul>
+              </li>
+              <div class="dropdown dropstart">
+                <button type="button" class="btn " data-bs-toggle="dropdown" aria-expanded="false"
+                  data-bs-auto-close="outside">
+                  <img src="./img/search.svg" alt=""> </button>
+                <form class="dropdown-menu  p-4">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label"></label>
+                    <input type="search" class="form-control" id="exampleDropdownFormEmail2" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn w-100 btn-secondary ">Ara</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row mt-5 pt-lg-5">
+        <div class="col-lg-10">
+          <h1>Doğru işi bulmanın<span class="text-red"> en kolay</span> yolu!</h1>
+          <h2 class="mt-5">Hayallerinizdeki işi bulmak artık çok kolay.</h2>
+          <p class="mt-3"><span class="text-red">15 yıllık deneyimimizle,</span> kariyer planınızı şekillendirmek için
+            size özel
+            arama sonuçları sunuyoruz!</p>
+          <p class="mt-5">Hayal ettiğiniz kariyeri keşfetmek için <span class="text-red"> aradığınız işi tanımlamanız
+              yeterli!</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="row" style="max-width: 80%;">
+        <form class="col d-flex p-2 flex-row rounded-3 bg-white">
+          <img src="./img/chat-search.svg" alt="">
+          <input class="border-0 " type="text" style="width: 75%;"
+            placeholder="Örn. İzmir’de yazılım mühendisiyim, remote çalışabileceğim bir yazılım firması arıyorum.">
+          <button class="bg-red text-white border-0 rounded-3">Kolay İş Ara</button>
+        </form>
+      </div>
+      <div class="my-3 row my-sm-5">
+        <p class="mb-0">Popüler Aramalar: Yazılım Geliştirme Uzmanı, Satış Temsilcisi, Muhasebe Uzmanı, Grafik Tasarımcı
+        </p>
+        <p><a href="" class="red text-decoration-none">Klasik İş Arama Motoru ile İş Ara
+            -></a></p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container my-5 ">
+      <div class="row">
+        <div class="col-lg-7">
+          <h2 class=" fw-700 mb-4 fs-40">Kolay İş Ara ile<span class="red">"Kazanan İkili"</span></h2>
+          <h3 class="fw-500 fs-24 mb-4" style="line-height: 40px;">Adaylar ve işverenler için mükemmel uyumu
+            sağlıyor,kariyer yolculuğunuzda <span class="red">en doğru eşleşmeyi</span> buluyoruz!</h3>
+          <p class="mt-4">Kariyer yolculuğunuzda sizlere en ideal iş ortamını hazırlamak için
+            adaylar ve işverenler arasında sürekli bir analiz çalışması gerçekleştiriyoruz.
+            iş arayan adaylar için staj döneminden itibaren özenle araştırmalar yaparak,
+            incelemeler ve analizler gerçekleştiriyoruz. </p>
+          <p class="mt-4">Adayların beceri ve uzmanlıklarını
+            değerlendirerek, işverenlere en iyi adayları sunuyoruz. Her iki tarafı da önemsiyor
+            ve adil bir kazan-kazan anlayışıyla hareket ediyoruz. Adaylar için de ideal iş ortamını oluşturmak ve
+            kariyer yolculuklarında destek olmak için çalışıyoruz.</p>
+          <button class="btn mt-4 bg-red  border-0 text-nowrap btn-outline-info text-light fw-500 fs-16" style="max-width: 367px;
+            height: 72px;" type="submit">“Kazanan İkili” den Biri Siz Olun</button>
+        </div>
+        <div class="col-lg-5 mt-5 pt-5 overflow-hidden">
+          <div class="col-6  float-start"><img style="min-width:auto ;" width="100%" src="./img/red-hand-left.svg"
+              alt=""></div>
+          <div class=" col-6 float-end "><img width="100%" style="min-width:auto ;" src="./img/red-hand-right.svg"
+              alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-grey">
+      <span class="bg-middle-left"></span>
+      <div class="container px-4 " id="hanging-icons">
+        <div class="row p-0 py-lg-5 g-4 mid-icon ">
+          <div class="col d-flex  align-items-start">
+            <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <img src="./img/yayinlanan-ilan.svg" alt="">
+            </div>
+            <div>
+              <h3 class=" ">8560</h3>
+              <p>Yayınlanan İlan</p>
+
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square  d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <img src="./img/firma.svg" alt="">
+            </div>
+            <div>
+              <h3 class="">6852</h3>
+              <p>Firma</p>
+
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <img src="./img/bulunan-is.svg" alt="">
+            </div>
+            <div>
+              <h3 class="">8563</h3>
+              <p class="">Bulunan İş</p>
+
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square 
+        d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <img src="./img/ozgecmis.svg" alt="">
+            </div>
+            <div>
+              <h3 class="">12.456</h3>
+              <p>Özgeçmiş</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <span class="bg-middle-right"></span>
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 justify-content-between">
+          <div class="bg-her position-relative">
+            <img class="bg-herr w-100" src="./img/hEr 1.svg">
+            <img class="ellipse-9 position-absolute " width="57px" src="./img/Ellipse 9.png" alt="">
+            <img class="ellipse-10 position-absolute" width=50px; src="./img/Ellipse 10.png" alt="">
+            <img class="ellipse-11 position-absolute" width="48px" src="./img/Ellipse 11.png" alt="">
+            <img class="ellipse-12 position-absolute" width="59px" src="./img/Ellipse 12.png" alt="">
+            <img class="ellipse-13 position-absolute" width="37px" src="./img/Ellipse 13.png" alt="">
+            <img class="ellipse-14 position-absolute" width="68px" src="./img/Ellipse 14.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 align-self-center">
+          <h2 class="mb-4">
+            <span class="text-red">En İyi Firmalar</span> <br> Tarafından Fark edilin!
+          </h2>
+          <p>Kariyer hedeflerinize uygun iş fırsatlarınızı keşfetmek için özgeçmişinizi yükleyin ve
+            en iyi firmaların dikkatini çekin. Kariyer hedeflerinize uygun pozisyon arayan firmaların
+            sizi kolayca bulmasını sağlayın.</p>
+          <p class="mt-5">Aramanızı kolaylaştırın, özgeçmişinizi yükleyin.</p>
+          <button class="btn mt-3 bg-red border-0 btn-outline-info text-nowrap  text-light  fw-500 fs-16" style="width: 226px;
+          height: 60px;" type="submit">CV Oluştur</button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid my-5 bg-container ">
+      <div class="col-2 position-absolute"> <img class="mid-left-img" src="./img/mid-left-img.svg" alt="">
+      </div>
+      <div class="col-8  mx-auto">
+        <div class=" row  align-items-center ">
+          <div class="col-lg-6 z-1">
+            <h3 class="fw-700 fs-32 green-text">SİZE ÖZEL CV!</h3>
+            <h4 class="fs-24px fw-400 mb-3">Geleceğinizdeki Başarıyı Birlikte Planlayalım!</h4>
+            <p class="fs-16 fw-400" style="line-height: 30px;letter-spacing: 0.16px;">Deneyimli danışmanlarımız,
+              özgeçmişinizi gözden geçirerek, kariyer hedeflerinize uygun olarak
+              özgeçmişinizi
+              özelleştiriyor ve işverenlerin dikkatini çekecek şekilde düzenliyor. Böylece, iş görüşmelerinde daha fazla
+              başarı elde etmenizi sağlıyoruz.</p>
+          </div>
+          <div class="col-lg-6  text-center">
+            <p>CV danışmanlığımı hakkındaki sorularınızın cevaplarını anında alın!</p>
+            <div class="row" style="max-width: 100%; ">
+              <form class="col d-flex bg-white rounded-start-5 rounded-end-5 flex-row p-0" style="width: 100%; width: 523px;
+              height: 70px;
+              flex-shrink: 0;
+              
+              " >
+                <input type="text" aria-label="First name" class=" border-0 rounded-start-5  "
+                  placeholder="Adınız Soyadınız" style="width: 40%">
+                <input type="email" aria-label="email" placeholder="E-posta" style="width: 40%"class="rounded-end-5 border-0">
+                <button style="width: 56px; 
+                height: 56px;" class="btn-clr my-auto border-0 rounded-circle "><img class="rounded-circle" src="./img/pngwing 1.svg" alt=""></button>
+              </form>
+            </div>
+            <div class="input-group position-relative mb-5" style="max-width: 523px;">
+            </div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+    <div class="container  my-5">
+      <div class="row">
+        <div class="col-lg-6 text-end align-self-center">
+          <h2>En Uygun Adaylar!
+          </h2>
+          <h3>İşverenler İçin Seçilmiş Aday Önerileri </h3>
+          <p>CV kirliliğinden kurtulun! </p>
+          <p>İşverenler için uygun adaylarla yapılan ön görüşmeler ve CV analizleri sonrası özelleştirilmişaday
+            listeleri, iş ihtiyaçlarına en uygun adayları seçerek işe alım sürecini optimize eder ve kolaylaştırır.
+          </p>
+          <p>Aradığınız özelliklerdeki en uygun adayları bulun!</p>
+          <button class="btn mt-4 btn-clr text-nowrap border-0 btn-outline-info text-light  fw-500 fs-16" style="width: 226px;
+          height: 60px;" type="submit">Ücretsiz İşveren Üyeliği</button>
+        </div>
+        <div class="col-lg-6 justify-content-between">
+          <div class="bg-her position-relative">
+            <img class="bg-herr w-100" src="./img/man.svg">
+            <img class="ellipsse-9 position-absolute " width="64px" src="./img/Ellipsse 9.svg" alt="">
+            <img class="ellipsse-10 position-absolute" width=50px; src="./img/Ellipsse 10.svg" alt="">
+            <img class="ellipsse-11 position-absolute" width="59px" src="./img/Ellipsse 11.svg" alt="">
+            <img class="ellipsse-12 position-absolute" width="59px" src="./img/Ellipsse 12.svg" alt="">
+            <img class="ellipsse-13 position-absolute" width="70px" src="./img/Ellipsse 13.svg" alt="">
+            <img class="ellipsse-14 position-absolute" width="60px" src="./img/Ellipsse 14.svg" alt="">
+            <img class="ellipsse-16 position-absolute" width="68px" src="./img/Ellipsse 16.svg" alt="">
+            <img class="ellipsse-17 position-absolute" width="50px" src="./img/Ellipsse 17.svg" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="container  mt-5">
+      <div class="row ">
+        <h2>Popüler Kategoriler</h2>
+      </div>
+      <div class="row mt-1">
+        <div class="col-md-8">
+          <p>984 aktif ilan - 27 bugün eklenen</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <a style="color: #2D4171;
+      " class="fw-400 fs-16  text-decoration-none" href="">Tümünü görüntüle <img src="./img/arrow_forward_ios.svg"
+              alt=""></a>
+        </div>
+      </div>
+      <div class="row  mt-3">
+        <ul class=" d-flex gap-3  justify-content-center flex-wrap  text-nowrap ">
+          <li class="btn  btn-sml  "><a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25" fill="white" />
+                <mask id="mask0_0_156" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="13" width="24"
+                  height="24">
+                  <rect x="13" y="13" width="24" height="24" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_0_156)">
+                  <path
+                    d="M20 26.6154C20.168 26.6154 20.3125 26.5548 20.4337 26.4337C20.5548 26.3125 20.6154 26.1679 20.6154 26C20.6154 25.8321 20.5548 25.6875 20.4337 25.5663C20.3125 25.4452 20.168 25.3846 20 25.3846C19.8321 25.3846 19.6875 25.4452 19.5663 25.5663C19.4452 25.6875 19.3846 25.8321 19.3846 26C19.3846 26.1679 19.4452 26.3125 19.5663 26.4337C19.6875 26.5548 19.8321 26.6154 20 26.6154ZM20 22.6154C20.168 22.6154 20.3125 22.5548 20.4337 22.4337C20.5548 22.3125 20.6154 22.168 20.6154 22C20.6154 21.832 20.5548 21.6875 20.4337 21.5663C20.3125 21.4452 20.168 21.3846 20 21.3846C19.8321 21.3846 19.6875 21.4452 19.5663 21.5663C19.4452 21.6875 19.3846 21.832 19.3846 22C19.3846 22.168 19.4452 22.3125 19.5663 22.4337C19.6875 22.5548 19.8321 22.6154 20 22.6154ZM22.1154 26.5H30.5V25.5H22.1154V26.5ZM22.1154 22.5H30.5V21.5H22.1154V22.5ZM22 33V31H17.6154C17.1551 31 16.7708 30.8458 16.4625 30.5375C16.1542 30.2292 16 29.8449 16 29.3846V18.6154C16 18.1551 16.1542 17.7708 16.4625 17.4625C16.7708 17.1542 17.1551 17 17.6154 17H32.3846C32.8449 17 33.2292 17.1542 33.5375 17.4625C33.8458 17.7708 34 18.1551 34 18.6154V29.3846C34 29.8449 33.8458 30.2292 33.5375 30.5375C33.2292 30.8458 32.8449 31 32.3846 31H28V33H22ZM17.6154 30H32.3846C32.5385 30 32.6795 29.9359 32.8077 29.8077C32.9359 29.6795 33 29.5385 33 29.3846V18.6154C33 18.4615 32.9359 18.3205 32.8077 18.1923C32.6795 18.0641 32.5385 18 32.3846 18H17.6154C17.4615 18 17.3205 18.0641 17.1923 18.1923C17.0641 18.3205 17 18.4615 17 18.6154V29.3846C17 29.5385 17.0641 29.6795 17.1923 29.8077C17.3205 29.9359 17.4615 30 17.6154 30Z"
+                    fill="#1D1D1D" />
+                </g>
+              </svg>
+              bilişim</a></li>
+          <li class="btn   btn-sml"><a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25" fill="white" />
+                <mask id="mask0_0_163" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="13" width="24"
+                  height="24">
+                  <rect x="13" y="13" width="24" height="24" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_0_163)">
+                  <path
+                    d="M24.5 33.7692V30.7692H17.5V29.7692H32.5V30.7692H25.5V33.7692H24.5ZM21.6154 25.0385C21.8218 25.0385 22.0016 24.9619 22.1548 24.8087C22.308 24.6554 22.3846 24.4756 22.3846 24.2692C22.3846 24.0628 22.308 23.883 22.1548 23.7298C22.0016 23.5766 21.8218 23.5 21.6154 23.5C21.409 23.5 21.2292 23.5766 21.076 23.7298C20.9228 23.883 20.8462 24.0628 20.8462 24.2692C20.8462 24.4756 20.9228 24.6554 21.076 24.8087C21.2292 24.9619 21.409 25.0385 21.6154 25.0385ZM28.3846 25.0385C28.591 25.0385 28.7708 24.9619 28.924 24.8087C29.0772 24.6554 29.1538 24.4756 29.1538 24.2692C29.1538 24.0628 29.0772 23.883 28.924 23.7298C28.7708 23.5766 28.591 23.5 28.3846 23.5C28.1782 23.5 27.9984 23.5766 27.8452 23.7298C27.692 23.883 27.6154 24.0628 27.6154 24.2692C27.6154 24.4756 27.692 24.6554 27.8452 24.8087C27.9984 24.9619 28.1782 25.0385 28.3846 25.0385ZM19 22.5231L20.4962 18.2231C20.541 18.0795 20.6214 17.9679 20.7374 17.8884C20.8534 17.809 20.9819 17.7692 21.1231 17.7692H28.8769C29.0181 17.7692 29.1467 17.809 29.2626 17.8884C29.3786 17.9679 29.459 18.0795 29.5038 18.2231L31 22.5231V28.3154C31 28.4478 30.9574 28.5565 30.8723 28.6416C30.7873 28.7267 30.6785 28.7692 30.5462 28.7692H30.4538C30.3215 28.7692 30.2128 28.7267 30.1277 28.6416C30.0426 28.5565 30 28.4478 30 28.3154V26.7692H20V28.3154C20 28.4478 19.9575 28.5565 19.8724 28.6416C19.7873 28.7267 19.6785 28.7692 19.5462 28.7692H19.4538C19.3215 28.7692 19.2127 28.7267 19.1277 28.6416C19.0426 28.5565 19 28.4478 19 28.3154V22.5231ZM20.3038 21.7692H29.6962L28.65 18.7692H21.35L20.3038 21.7692ZM20 25.7692H30V22.7692H20V25.7692Z"
+                    fill="#1D1D1D" />
+                </g>
+              </svg>
+              Otomotiv</a></li>
+          <li class="btn   btn-sml"><a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25" fill="white" />
+                <mask id="mask0_0_170" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="13" width="24"
+                  height="24">
+                  <rect x="13" y="13" width="24" height="24" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_0_170)">
+                  <path
+                    d="M17.6154 34C17.1551 34 16.7708 33.8458 16.4625 33.5375C16.1542 33.2292 16 32.8449 16 32.3846V22.6154C16 22.1551 16.1542 21.7708 16.4625 21.4625C16.7708 21.1542 17.1551 21 17.6154 21H23V17C23 16.7192 23.0965 16.4824 23.2894 16.2894C23.4824 16.0965 23.7192 16 24 16H26C26.2808 16 26.5176 16.0965 26.7106 16.2894C26.9035 16.4824 27 16.7192 27 17V21H32.3846C32.8449 21 33.2292 21.1542 33.5375 21.4625C33.8458 21.7708 34 22.1551 34 22.6154V32.3846C34 32.8449 33.8458 33.2292 33.5375 33.5375C33.2292 33.8458 32.8449 34 32.3846 34H17.6154ZM17.6154 33H32.3846C32.5641 33 32.7115 32.9423 32.8269 32.8269C32.9423 32.7115 33 32.5641 33 32.3846V22.6154C33 22.4359 32.9423 22.2885 32.8269 22.1731C32.7115 22.0577 32.5641 22 32.3846 22H27C27 22.3577 26.8907 22.6138 26.6721 22.7683C26.4535 22.9228 26.1654 23 25.8077 23H24.1923C23.8346 23 23.5465 22.9228 23.3279 22.7683C23.1093 22.6138 23 22.3577 23 22H17.6154C17.4359 22 17.2885 22.0577 17.1731 22.1731C17.0577 22.2885 17 22.4359 17 22.6154V32.3846C17 32.5641 17.0577 32.7115 17.1731 32.8269C17.2885 32.9423 17.4359 33 17.6154 33ZM19.3077 30.4231H24.6923V30.2808C24.6923 30.0487 24.6292 29.8375 24.5029 29.6471C24.3766 29.4567 24.2039 29.3077 23.9846 29.2C23.6641 29.0628 23.3394 28.9599 23.0106 28.8913C22.6817 28.8228 22.3449 28.7885 22 28.7885C21.6551 28.7885 21.3183 28.8228 20.9894 28.8913C20.6606 28.9599 20.3359 29.0628 20.0154 29.2C19.7961 29.3077 19.6234 29.4567 19.4971 29.6471C19.3708 29.8375 19.3077 30.0487 19.3077 30.2808V30.4231ZM27 28.8846H31V28H27V28.8846ZM22 28C22.3269 28 22.6074 27.883 22.8414 27.649C23.0753 27.4151 23.1923 27.1346 23.1923 26.8077C23.1923 26.4808 23.0753 26.2003 22.8414 25.9663C22.6074 25.7324 22.3269 25.6154 22 25.6154C21.6731 25.6154 21.3926 25.7324 21.1587 25.9663C20.9247 26.2003 20.8077 26.4808 20.8077 26.8077C20.8077 27.1346 20.9247 27.4151 21.1587 27.649C21.3926 27.883 21.6731 28 22 28ZM27 26.5H31V25.6154H27V26.5ZM24 22H26V17H24V22Z"
+                    fill="#1D1D1D" />
+                </g>
+              </svg>
+              Danışmanlık</a></li>
+          <li class="btn   btn-sml "><a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25" fill="white" />
+                <mask id="mask0_0_177" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="13" width="24"
+                  height="24">
+                  <rect x="13" y="13" width="24" height="24" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_0_177)">
+                  <path
+                    d="M25 32C25 30.6154 24.4744 29.3974 23.4231 28.3462C22.3718 27.2949 21.1538 26.7692 19.7692 26.7692C19.7692 28.1538 20.2949 29.3718 21.3462 30.4231C22.3974 31.4744 23.6154 32 25 32ZM25 26.7962C25.3949 26.7962 25.7199 26.6686 25.975 26.4135C26.2301 26.1583 26.3577 25.8333 26.3577 25.4385V25.3269C26.4654 25.4141 26.5837 25.4795 26.7125 25.5231C26.8414 25.5667 26.9846 25.5885 27.1423 25.5885C27.5372 25.5885 27.8686 25.4545 28.1365 25.1865C28.4045 24.9186 28.5385 24.5872 28.5385 24.1923C28.5385 23.8974 28.4689 23.641 28.3298 23.4231C28.1907 23.2051 27.9987 23.0462 27.7538 22.9462C27.9987 22.8462 28.1907 22.6872 28.3298 22.4692C28.4689 22.2513 28.5385 21.9949 28.5385 21.7C28.5385 21.3051 28.4045 20.9737 28.1365 20.7058C27.8686 20.4378 27.5372 20.3038 27.1423 20.3038C26.9846 20.3038 26.8414 20.3256 26.7125 20.3692C26.5837 20.4128 26.4654 20.4782 26.3577 20.5654V20.4154C26.3577 20.0205 26.2301 19.6955 25.975 19.4404C25.7199 19.1852 25.3949 19.0577 25 19.0577C24.6051 19.0577 24.2801 19.1852 24.025 19.4404C23.7699 19.6955 23.6423 20.0205 23.6423 20.4154V20.5654C23.5346 20.4782 23.4163 20.4128 23.2875 20.3692C23.1586 20.3256 23.0154 20.3038 22.8577 20.3038C22.4628 20.3038 22.1314 20.4378 21.8635 20.7058C21.5955 20.9737 21.4615 21.3051 21.4615 21.7C21.4615 21.9949 21.5311 22.2513 21.6702 22.4692C21.8093 22.6872 22.0013 22.8462 22.2462 22.9462C22.0013 23.0462 21.8093 23.2051 21.6702 23.4231C21.5311 23.641 21.4615 23.8974 21.4615 24.1923C21.4615 24.5872 21.5955 24.9186 21.8635 25.1865C22.1314 25.4545 22.4628 25.5885 22.8577 25.5885C23.0154 25.5885 23.1586 25.5667 23.2875 25.5231C23.4163 25.4795 23.5346 25.4141 23.6423 25.3269V25.4385C23.6423 25.8333 23.7699 26.1583 24.025 26.4135C24.2801 26.6686 24.6051 26.7962 25 26.7962ZM25 24.9192C24.4513 24.9192 23.9853 24.7285 23.6019 24.3471C23.2186 23.9657 23.0269 23.4987 23.0269 22.9462C23.0269 22.3974 23.2186 21.9314 23.6019 21.5481C23.9853 21.1647 24.4513 20.9731 25 20.9731C25.5487 20.9731 26.0147 21.1647 26.3981 21.5481C26.7814 21.9314 26.9731 22.3974 26.9731 22.9462C26.9731 23.4987 26.7814 23.9657 26.3981 24.3471C26.0147 24.7285 25.5487 24.9192 25 24.9192ZM25 32C26.3846 32 27.6026 31.4744 28.6538 30.4231C29.7051 29.3718 30.2308 28.1538 30.2308 26.7692C28.8462 26.7692 27.6282 27.2949 26.5769 28.3462C25.5256 29.3974 25 30.6154 25 32ZM17.6154 34C17.1551 34 16.7708 33.8458 16.4625 33.5375C16.1542 33.2292 16 32.8449 16 32.3846V17.6154C16 17.1551 16.1542 16.7708 16.4625 16.4625C16.7708 16.1542 17.1551 16 17.6154 16H32.3846C32.8449 16 33.2292 16.1542 33.5375 16.4625C33.8458 16.7708 34 17.1551 34 17.6154V32.3846C34 32.8449 33.8458 33.2292 33.5375 33.5375C33.2292 33.8458 32.8449 34 32.3846 34H17.6154ZM17.6154 33H32.3846C32.5385 33 32.6795 32.9359 32.8077 32.8077C32.9359 32.6795 33 32.5385 33 32.3846V17.6154C33 17.4615 32.9359 17.3205 32.8077 17.1923C32.6795 17.0641 32.5385 17 32.3846 17H17.6154C17.4615 17 17.3205 17.0641 17.1923 17.1923C17.0641 17.3205 17 17.4615 17 17.6154V32.3846C17 32.5385 17.0641 32.6795 17.1923 32.8077C17.3205 32.9359 17.4615 33 17.6154 33Z"
+                    fill="#1D1D1D" />
+                </g>
+              </svg>
+              Tarım ve
+              Hayvancılık</a></li>
+          <li class="btn  btn-sml"><a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25" fill="white" />
+                <mask id="mask0_0_184" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="13" width="24"
+                  height="24">
+                  <rect x="13" y="13" width="24" height="24" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_0_184)">
+                  <path
+                    d="M27.3827 27.3846C27.0788 26.7564 26.4702 26.2276 25.5567 25.7981C24.6433 25.3686 23.4769 25.1539 22.0577 25.1539C20.6385 25.1539 19.4721 25.3686 18.5587 25.7981C17.6452 26.2276 17.0366 26.7564 16.7327 27.3846H27.3827ZM15.4423 28.3846C15.4423 27.8077 15.5981 27.2628 15.9096 26.75C16.2212 26.2372 16.666 25.7884 17.2442 25.4038C17.8224 25.0192 18.5199 24.7147 19.3365 24.4904C20.1532 24.266 21.0635 24.1538 22.0673 24.1538C23.0712 24.1538 23.9782 24.266 24.7885 24.4904C25.5987 24.7147 26.293 25.0192 26.8712 25.4038C27.4494 25.7884 27.8942 26.2372 28.2058 26.75C28.5173 27.2628 28.6731 27.8077 28.6731 28.3846H15.4423ZM15.4423 31.6923V30.6923H28.6731V31.6923H15.4423ZM30.6731 35V34H32.0731L33.4731 20.3846H24.4615L24.3269 19.3846H28.9423V15.3846H29.9423V19.3846H34.5577L33.0616 34.0885C33.0244 34.3987 32.9062 34.6282 32.7071 34.7769C32.5079 34.9256 32.2684 35 31.9885 35H30.6731ZM16.0577 35C15.8833 35 15.7372 34.941 15.6192 34.8231C15.5013 34.7051 15.4423 34.559 15.4423 34.3846V34H28.6731V34.3846C28.6731 34.559 28.6189 34.7051 28.5106 34.8231C28.4022 34.941 28.2513 35 28.0577 35H16.0577Z"
+                    fill="#1D1D1D" />
+                </g>
+              </svg>
+              Gıda</a></li>
+          <li class="btn   btn-sml"><a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25" fill="white" />
+                <mask id="mask0_0_191" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="13" width="24"
+                  height="24">
+                  <rect x="13" y="13" width="24" height="24" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_0_191)">
+                  <path
+                    d="M23.55 31.2L28.725 25H24.725L25.45 19.325L20.825 26H24.3L23.55 31.2ZM22.1539 33.8846L23.1539 27H18.9038L26.3846 16.2115H26.8462L25.8654 24H30.8654L22.6154 33.8846H22.1539Z"
+                    fill="#1D1D1D" />
+                </g>
+              </svg>
+              Enerji</a></li>
+          <li class="btn   btn-sml"><a class="" href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="25" fill="white" />
+                <mask id="mask0_0_198" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="13" width="24"
+                  height="24">
+                  <rect x="13" y="13" width="24" height="24" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_0_198)">
+                  <path
+                    d="M14.9154 33.1923V31.5462C14.9154 31.1115 15.0314 30.7231 15.2635 30.3808C15.4955 30.0385 15.8231 29.7615 16.2462 29.55C17.0577 29.1423 17.9584 28.8141 18.9481 28.5654C19.9379 28.3167 20.927 28.1923 21.9154 28.1923C22.9039 28.1923 23.893 28.3167 24.8827 28.5654C25.8725 28.8141 26.7731 29.1423 27.5847 29.55C28.0077 29.7615 28.3353 30.0385 28.5674 30.3808C28.7994 30.7231 28.9154 31.1115 28.9154 31.5462V33.1923H14.9154ZM15.9154 32.1923H27.9154V31.5462C27.9154 31.2731 27.8375 31.0487 27.6818 30.8731C27.526 30.6974 27.3346 30.5487 27.1077 30.4269C26.4821 30.1013 25.6984 29.8141 24.7568 29.5654C23.8151 29.3167 22.868 29.1923 21.9154 29.1923C20.9628 29.1923 20.0157 29.3167 19.0741 29.5654C18.1324 29.8141 17.3487 30.1013 16.7231 30.4269C16.4962 30.5487 16.3048 30.6974 16.1491 30.8731C15.9933 31.0487 15.9154 31.2731 15.9154 31.5462V32.1923ZM21.9154 25.9616C21.059 25.9616 20.3449 25.6757 19.7731 25.1039C19.2013 24.5321 18.9154 23.7795 18.9154 22.8462H18.7039C18.5923 22.8462 18.5003 22.8099 18.4279 22.7375C18.3555 22.6651 18.3193 22.5731 18.3193 22.4615C18.3193 22.35 18.3555 22.258 18.4279 22.1856C18.5003 22.1131 18.5923 22.0769 18.7039 22.0769H18.9154C18.9411 21.5705 19.0475 21.1103 19.2346 20.6962C19.4218 20.2821 19.7257 19.8872 20.1462 19.5115V20.4615C20.1462 20.5731 20.1824 20.6651 20.2548 20.7375C20.3273 20.8099 20.4193 20.8462 20.5308 20.8462C20.6423 20.8462 20.7343 20.8099 20.8068 20.7375C20.8792 20.6651 20.9154 20.5731 20.9154 20.4615V19.15C21.0526 19.1 21.2077 19.0561 21.3808 19.0183C21.5539 18.9804 21.7321 18.9615 21.9154 18.9615C22.0987 18.9615 22.2769 18.9804 22.45 19.0183C22.6231 19.0561 22.7782 19.1 22.9154 19.15V20.4615C22.9154 20.5731 22.9516 20.6651 23.0241 20.7375C23.0965 20.8099 23.1885 20.8462 23.3 20.8462C23.4116 20.8462 23.5036 20.8099 23.576 20.7375C23.6484 20.6651 23.6847 20.5731 23.6847 20.4615V19.5115C24.118 19.8872 24.425 20.2821 24.6058 20.6962C24.7866 21.1103 24.8898 21.5705 24.9154 22.0769H25.127C25.2385 22.0769 25.3305 22.1131 25.4029 22.1856C25.4754 22.258 25.5116 22.35 25.5116 22.4615C25.5116 22.5731 25.4754 22.6651 25.4029 22.7375C25.3305 22.8099 25.2385 22.8462 25.127 22.8462H24.9154C24.9154 23.7795 24.6295 24.5321 24.0577 25.1039C23.4859 25.6757 22.7718 25.9616 21.9154 25.9616ZM21.9154 24.9615C22.4911 24.9615 22.9683 24.7721 23.3472 24.3933C23.726 24.0144 23.9154 23.5372 23.9154 22.9615H19.9154C19.9154 23.5372 20.1048 24.0144 20.4837 24.3933C20.8625 24.7721 21.3398 24.9615 21.9154 24.9615ZM29.4539 27.8462L29.3808 27.1346C29.2552 27.1013 29.1241 27.0478 28.9875 26.9741C28.851 26.9003 28.7347 26.8154 28.6385 26.7192L27.977 27.0077L27.5923 26.3385L28.1808 25.9154C28.1552 25.8397 28.1423 25.7705 28.1423 25.7077V25.3019C28.1423 25.2455 28.1552 25.1731 28.1808 25.0846L27.5923 24.6616L27.977 23.9923L28.6385 24.2808C28.7308 24.1885 28.8462 24.1045 28.9847 24.0289C29.1231 23.9532 29.2552 23.8987 29.3808 23.8654L29.4539 23.1539H30.2231L30.2962 23.8654C30.4218 23.8987 30.5539 23.9532 30.6923 24.0289C30.8308 24.1045 30.9462 24.1885 31.0385 24.2808L31.7 23.9923L32.0847 24.6616L31.4962 25.0846C31.5218 25.1731 31.5347 25.2455 31.5347 25.3019V25.7077C31.5347 25.7705 31.5218 25.8397 31.4962 25.9154L32.0847 26.3385L31.7 27.0077L31.0385 26.7192C30.9423 26.8154 30.826 26.9003 30.6895 26.9741C30.5529 27.0478 30.4218 27.1013 30.2962 27.1346L30.2231 27.8462H29.4539ZM29.8385 26.4039C30.0898 26.4039 30.3032 26.316 30.4789 26.1404C30.6545 25.9647 30.7423 25.7513 30.7423 25.5C30.7423 25.2487 30.6545 25.0353 30.4789 24.8596C30.3032 24.684 30.0898 24.5962 29.8385 24.5962C29.5872 24.5962 29.3738 24.684 29.1981 24.8596C29.0225 25.0353 28.9347 25.2487 28.9347 25.5C28.9347 25.7513 29.0225 25.9647 29.1981 26.1404C29.3738 26.316 29.5872 26.4039 29.8385 26.4039ZM31.8693 22.4231L31.7847 21.6423C31.5962 21.6051 31.3978 21.5298 31.1895 21.4164C30.9811 21.3029 30.8141 21.1641 30.6885 21L29.9462 21.3116L29.5154 20.5731L30.1731 20.0923C30.1398 19.9962 30.1167 19.8974 30.1039 19.7962C30.0911 19.6949 30.0847 19.5962 30.0847 19.5C30.0847 19.4039 30.0911 19.3051 30.1039 19.2039C30.1167 19.1026 30.1398 19.0039 30.1731 18.9077L29.5154 18.4269L29.9462 17.6885L30.6885 18C30.8141 17.8359 30.9811 17.6971 31.1895 17.5837C31.3978 17.4702 31.5962 17.3949 31.7847 17.3577L31.8693 16.5769H32.7308L32.8154 17.3577C33.0039 17.3949 33.2023 17.4702 33.4106 17.5837C33.6189 17.6971 33.7859 17.8359 33.9116 18L34.6539 17.6885L35.0847 18.4269L34.427 18.9077C34.4603 19.0039 34.4834 19.1026 34.4962 19.2039C34.509 19.3051 34.5154 19.4039 34.5154 19.5C34.5154 19.5962 34.509 19.6949 34.4962 19.7962C34.4834 19.8974 34.4603 19.9962 34.427 20.0923L35.0847 20.5731L34.6539 21.3116L33.9116 21C33.7859 21.1641 33.6189 21.3029 33.4106 21.4164C33.2023 21.5298 33.0039 21.6051 32.8154 21.6423L32.7308 22.4231H31.8693ZM32.3 20.8654C32.6885 20.8654 33.0132 20.7349 33.2741 20.4741C33.535 20.2132 33.6654 19.8885 33.6654 19.5C33.6654 19.1115 33.535 18.7869 33.2741 18.526C33.0132 18.2651 32.6885 18.1346 32.3 18.1346C31.9116 18.1346 31.5869 18.2651 31.326 18.526C31.0651 18.7869 30.9347 19.1115 30.9347 19.5C30.9347 19.8885 31.0651 20.2132 31.326 20.4741C31.5869 20.7349 31.9116 20.8654 32.3 20.8654Z"
+                    fill="#1D1D1D" />
+                </g>
+              </svg>
+              Hizmet</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container  my-5">
+      <div class="row ">
+        <div class="col-lg-6 ">
+          <div class="bg-team position-relative">
+            <img class="max-wth w-100" src="./img/Rectangle 26.png">
+            <div class=" aday">
+              <h5 class="fw-600 fs-16">10.000+ Aday</h5>
+              <img class="ellipse-18 " width="38px" src="./img/Ellipse 18.svg" alt="">
+              <img class="ellipse-19 " width=38px; src="./img/Ellipse 19.svg" alt="">
+              <img class="ellipse-20 " width="38px" src="./img/Ellipse 20.svg" alt="">
+              <img class="ellipse-21 " width="38px" src="./img/Ellipse 21.svg" alt="">
+              <img class="ellipse-22 " width="38px" src="./img/Ellipse 22.svg" alt="">
+            </div>
+            <div class="enuygun px-3 d-flex align-items-center"><img width="30px" class="" width="42px"
+                src="./img/Group 311.svg" alt="">
+              <p class="p-0 pt-2 ps-2 ">Kariyer planlamanızın <br>
+                ilk adımını birlikte atalım!</p>
+            </div>
+            <div class="kariyer px-3 d-flex align-items-center"><img width="30px" class="blue-bg ms-2"
+                src="./img/graduation 1.svg" alt="">
+              <p class="p-0 pt-2 ps-2 ">En uygun adaylarla <br> geleceğe köprü kurun!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6  mt-5">
+          <h2 class="mb-4 fw-400 fs-40" style="hyphens:auto">
+            <span class="green-text fw-600 fs-40">Staj ve Stajyer </span>Arayanları  Buluşturuyoruz!
+          </h2>
+          <p>Staj ve stajyer arayanları bir araya getirerek, öğrencilerin iş dünyasına adım atması ve işverenlerin genç
+            yetenekleri keşfetmesi için bir köprü kuruyoruz.</p>
+          <div class="row mt-5 justify-content-center">
+            <div class="col-md-6  ">
+              <p class="fs-16 fw-400 text-start text-lg-center">Kariyer yolculuğunuza başlayın</p>
+              <button style="max-width: 249px;
+              height: 60px;" class="btn green border-0 btn-outline-info text-white">Staj Ara</button>
+            </div>
+            <div class="col-md-6  ">
+              <p class="fs-16 fw-400 text-start text-lg-center">Geleceğin iş gücünü keşfedin.</p>
+              <button style="max-width: 249px;
+              height: 60px; " class="blue btn border-0 btn-outline-info  text-white">
+                Stajyer Ara
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container  my-5">
+      <div class="row ">
+        <h2>Öne Çıkan <span class="green-text">İş İlanları</span></h2>
+      </div>
+      <div class="row my-1 mb-3">
+        <div class="col-md-8">
+          <p>8560 aktif ilan - 194 bugün eklenen</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <a style="color: #2D4171;
+        " class="fw-400 fs-16  text-decoration-none" href="">Tüm adayları görüntüle <img
+              src="./img/arrow_forward_ios.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="row d-flex mb-3">
+        <ul class=" d-flex align-content-start flex-wrap  text-nowrap ">
+          <li class="btn rounded-4 pre-job "><a class=" fw-400 fs-14 " href="">Tümü</a></li>
+          <li class="btn rounded-4 pre-job"><a class=" fw-400 fs-14 " href="">Bugün Yayınlananlar</a>
+          </li>
+          <li class="btn rounded-4  pre-job"><a class=" fw-400 fs-14 " href="">Part Time</a></li>
+          <li class="btn rounded-4 pre-job"><a class=" fw-400 fs-14" href="">Stajyer</a></li>
+          <li class="btn rounded-4 pre-job"><a class=" fw-400  fs-14" href="">Uzaktan Çalışma</a></li>
+          <li class="btn rounded-4  pre-job"><a class=" fw-400  fs-14" href="">Yönetici</a></li>
+          <li class="btn rounded-4 pre-job"><a class="  fw-400 fs-14 " href="">Geçici</a></li>
+        </ul>
+      </div>
+      <div class="row  row-gap-3">
+        <div class="row rounded job-list" style="min-height: 115px;">
+          <div class="col-md-9  d-flex">
+            <div class="col-2 me-1 my-auto"><img src="./img/mavi-piksel-new-01 1.svg" width="49px" height="49px"
+                class="bg-black rounded" alt=""></div>
+            <div class="col-10 flex-grow-1 my-auto">
+              <div class="row ">
+                <h4 class="fs-16 mt-2 fw-400">Frontend Developer</h4>
+              </div>
+              <div class="row">
+                <ul class="fs-14 d-flex align-content-start flex-wrap gap-2 text-nowrap fw-400 "
+                  style="list-style: none; ">
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_266" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_266)">
+                        <path
+                          d="M3 20V9.50002L10 4.21155L13.9904 7.2231C13.8045 7.28591 13.6308 7.35931 13.4692 7.4433C13.3077 7.52726 13.15 7.62822 12.9962 7.74617L10 5.46157L4 10V19H8.11538V20H3ZM10.5 20V18.6726C10.5 18.4281 10.5683 18.2029 10.7048 17.9971C10.8413 17.7914 11.0148 17.6224 11.225 17.4904C11.9532 17.0532 12.7189 16.7276 13.5221 16.5135C14.3253 16.2994 15.1513 16.1923 16 16.1923C16.8487 16.1923 17.6747 16.2994 18.4779 16.5135C19.2811 16.7276 20.0468 17.0532 20.775 17.4904C20.9853 17.6224 21.1586 17.7914 21.2952 17.9971C21.4317 18.2029 21.5 18.4281 21.5 18.6726V20H10.5ZM11.5346 19H20.4654V18.4616C19.7795 18.0641 19.0634 17.7532 18.3173 17.5289C17.5712 17.3045 16.7987 17.1923 16 17.1923C15.2013 17.1923 14.4289 17.3045 13.6827 17.5289C12.9366 17.7532 12.2205 18.0641 11.5346 18.4616V19ZM16.0023 14.0962C15.3084 14.0962 14.7179 13.8533 14.2308 13.3677C13.7436 12.882 13.5 12.2923 13.5 11.5984C13.5 10.9046 13.7428 10.3141 14.2285 9.82695C14.7142 9.33976 15.3039 9.09617 15.9977 9.09617C16.6916 9.09617 17.2821 9.33901 17.7692 9.82467C18.2564 10.3104 18.5 10.9001 18.5 11.5939C18.5 12.2877 18.2572 12.8782 17.7715 13.3654C17.2858 13.8526 16.6961 14.0962 16.0023 14.0962ZM16 13.0962C16.4115 13.0962 16.7644 12.9491 17.0587 12.6548C17.3529 12.3606 17.5 12.0077 17.5 11.5962C17.5 11.1846 17.3529 10.8318 17.0587 10.5375C16.7644 10.2433 16.4115 10.0962 16 10.0962C15.5885 10.0962 15.2356 10.2433 14.9413 10.5375C14.6471 10.8318 14.5 11.1846 14.5 11.5962C14.5 12.0077 14.6471 12.3606 14.9413 12.6548C15.2356 12.9491 15.5885 13.0962 16 13.0962Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>MaviPiksel İnternet Çözümleri</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_271" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_271)">
+                        <path
+                          d="M15.3 15.9884L11.5 12.1884V7.49995H12.5V11.8115L15.9885 15.2999L15.3 15.9884ZM3.94616 16.0173C3.66539 15.4698 3.44873 14.8993 3.29616 14.3057C3.14359 13.7121 3.04872 13.1102 3.01154 12.4999H4.01731C4.05449 13.0294 4.14135 13.5461 4.27789 14.0499C4.41444 14.5538 4.60065 15.0429 4.83654 15.5173L3.94616 16.0173ZM3.01154 11.4999C3.04872 10.8897 3.1468 10.2868 3.30579 9.6913C3.46475 9.09578 3.68654 8.5179 3.97116 7.95765L4.83654 8.45765C4.58782 8.932 4.3984 9.42431 4.26829 9.93458C4.13815 10.4448 4.05449 10.9666 4.01731 11.4999H3.01154ZM7.09809 19.5346C6.57115 19.1884 6.08397 18.7939 5.63654 18.3509C5.1891 17.908 4.79231 17.423 4.44616 16.8961L5.31156 16.3769C5.60899 16.8307 5.95098 17.2509 6.33751 17.6375C6.72404 18.024 7.14424 18.366 7.59809 18.6634L7.09809 19.5346ZM5.33656 7.59802L4.44616 7.09802C4.79231 6.57109 5.1891 6.08712 5.63654 5.6461C6.08397 5.20507 6.57115 4.81147 7.09809 4.46532L7.59809 5.3365C7.14809 5.63393 6.73302 5.97271 6.35289 6.35282C5.97277 6.73296 5.63399 7.14803 5.33656 7.59802ZM11.5 20.9884C10.8898 20.9512 10.2869 20.8532 9.69136 20.6942C9.09584 20.5352 8.51796 20.3134 7.95771 20.0288L8.45771 19.1634C8.93206 19.4121 9.42437 19.6016 9.93464 19.7317C10.4449 19.8618 10.9667 19.9455 11.5 19.9826V20.9884ZM8.45771 4.83647L7.95771 3.9711C8.51796 3.68648 9.09584 3.46469 9.69136 3.30572C10.2869 3.14674 10.8898 3.04866 11.5 3.01147V4.01725C10.9667 4.05443 10.4449 4.13809 9.93464 4.26822C9.42437 4.39834 8.93206 4.58776 8.45771 4.83647ZM12.5 20.9884V19.9826C13.0333 19.9455 13.5551 19.8618 14.0654 19.7317C14.5757 19.6016 15.068 19.4121 15.5423 19.1634L16.0423 20.0288C15.4821 20.3134 14.9042 20.5352 14.3087 20.6942C13.7131 20.8532 13.1103 20.9512 12.5 20.9884ZM15.5423 4.83647C15.068 4.58776 14.5757 4.39834 14.0654 4.26822C13.5551 4.13809 13.0333 4.05443 12.5 4.01725V3.01147C13.1103 3.04866 13.7131 3.14674 14.3087 3.30572C14.9042 3.46469 15.4821 3.68648 16.0423 3.9711L15.5423 4.83647ZM16.9019 19.5346L16.4019 18.6634C16.8519 18.366 17.267 18.0272 17.6471 17.6471C18.0273 17.2669 18.366 16.8519 18.6635 16.4019L19.5346 16.9019C19.1885 17.4288 18.7949 17.9137 18.3539 18.3567C17.9128 18.7996 17.4289 19.1923 16.9019 19.5346ZM18.6635 7.5788C18.366 7.1288 18.0273 6.71694 17.6471 6.34322C17.267 5.96951 16.8519 5.63393 16.4019 5.3365L16.9019 4.46532C17.4289 4.80764 17.9128 5.19611 18.3539 5.63072C18.7949 6.06532 19.1866 6.54609 19.5289 7.07302L18.6635 7.5788ZM19.9827 11.4999C19.9455 10.9666 19.8587 10.4448 19.7221 9.93458C19.5856 9.42431 19.393 8.92559 19.1442 8.43842L20.0289 7.93265C20.3096 8.49675 20.5305 9.07656 20.6914 9.67207C20.8523 10.2676 20.9513 10.8769 20.9885 11.4999H19.9827ZM20.0289 16.0423L19.1635 15.5423C19.4122 15.0679 19.6016 14.5756 19.7317 14.0653C19.8619 13.5551 19.9455 13.0333 19.9827 12.4999H20.9885C20.9513 13.1102 20.8532 13.7131 20.6942 14.3086C20.5353 14.9041 20.3135 15.482 20.0289 16.0423Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>22.04.2023</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_276" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_276)">
+                        <path
+                          d="M16 13.5C16.4333 13.5 16.7917 13.3583 17.075 13.075C17.3583 12.7917 17.5 12.4333 17.5 12C17.5 11.5667 17.3583 11.2083 17.075 10.925C16.7917 10.6417 16.4333 10.5 16 10.5C15.5667 10.5 15.2083 10.6417 14.925 10.925C14.6417 11.2083 14.5 11.5667 14.5 12C14.5 12.4333 14.6417 12.7917 14.925 13.075C15.2083 13.3583 15.5667 13.5 16 13.5ZM5.61538 20C5.15513 20 4.77083 19.8458 4.4625 19.5375C4.15417 19.2292 4 18.8449 4 18.3846V5.61537C4 5.15512 4.15417 4.77083 4.4625 4.4625C4.77083 4.15417 5.15513 4 5.61538 4H18.3846C18.8449 4 19.2292 4.15417 19.5375 4.4625C19.8458 4.77083 20 5.15512 20 5.61537V8.55768H19V5.61537C19 5.43589 18.9423 5.28846 18.8269 5.17308C18.7115 5.05769 18.5641 5 18.3846 5H5.61538C5.43589 5 5.28846 5.05769 5.17308 5.17308C5.05769 5.28846 5 5.43589 5 5.61537V18.3846C5 18.5641 5.05769 18.7115 5.17308 18.8269C5.28846 18.9423 5.43589 19 5.61538 19H18.3846C18.5641 19 18.7115 18.9423 18.8269 18.8269C18.9423 18.7115 19 18.5641 19 18.3846V15.4423H20V18.3846C20 18.8449 19.8458 19.2292 19.5375 19.5375C19.2292 19.8458 18.8449 20 18.3846 20H5.61538ZM13.6154 16C13.1551 16 12.7708 15.8458 12.4625 15.5375C12.1542 15.2292 12 14.8449 12 14.3846V9.61538C12 9.15513 12.1542 8.77083 12.4625 8.4625C12.7708 8.15417 13.1551 8 13.6154 8H19.3846C19.8449 8 20.2292 8.15417 20.5375 8.4625C20.8458 8.77083 21 9.15513 21 9.61538V14.3846C21 14.8449 20.8458 15.2292 20.5375 15.5375C20.2292 15.8458 19.8449 16 19.3846 16H13.6154ZM19.3846 15C19.5641 15 19.7115 14.9423 19.8269 14.8269C19.9423 14.7115 20 14.5641 20 14.3846V9.61538C20 9.43589 19.9423 9.28846 19.8269 9.17308C19.7115 9.05769 19.5641 9 19.3846 9H13.6154C13.4359 9 13.2885 9.05769 13.1731 9.17308C13.0577 9.28846 13 9.43589 13 9.61538V14.3846C13 14.5641 13.0577 14.7115 13.1731 14.8269C13.2885 14.9423 13.4359 15 13.6154 15H19.3846Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>20-25K / ay</li>
+                  <li class="job-button text-center">Stajyer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-auto">
+            <div class="float-lg-end d-flex justify-content-center align-items-center">
+              <img src="./img/bookmark_add.svg" alt="">
+              <button class="hemen-basvur text-nowrap rounded ms-3"
+                style="width: 180px; height: 50px;border: none;">Hemen
+                Başvur</button>
+            </div>
+          </div>
+        </div>
+        <div class="row rounded job-list" style="min-height: 115px;">
+          <div class="col-md-9  d-flex">
+            <div class="col-2 me-1 my-auto"><img src="./img/mavi-piksel-new-01 1.svg" width="49px" height="49px"
+                class="bg-black rounded" alt=""></div>
+            <div class="col-10 flex-grow-1 my-auto">
+              <div class="row ">
+                <h4 class="fs-16 mt-2 fw-400">Frontend Developer</h4>
+              </div>
+              <div class="row">
+                <ul class="fs-14 d-flex align-content-start flex-wrap gap-2 text-nowrap fw-400 "
+                  style="list-style: none; ">
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_266" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_266)">
+                        <path
+                          d="M3 20V9.50002L10 4.21155L13.9904 7.2231C13.8045 7.28591 13.6308 7.35931 13.4692 7.4433C13.3077 7.52726 13.15 7.62822 12.9962 7.74617L10 5.46157L4 10V19H8.11538V20H3ZM10.5 20V18.6726C10.5 18.4281 10.5683 18.2029 10.7048 17.9971C10.8413 17.7914 11.0148 17.6224 11.225 17.4904C11.9532 17.0532 12.7189 16.7276 13.5221 16.5135C14.3253 16.2994 15.1513 16.1923 16 16.1923C16.8487 16.1923 17.6747 16.2994 18.4779 16.5135C19.2811 16.7276 20.0468 17.0532 20.775 17.4904C20.9853 17.6224 21.1586 17.7914 21.2952 17.9971C21.4317 18.2029 21.5 18.4281 21.5 18.6726V20H10.5ZM11.5346 19H20.4654V18.4616C19.7795 18.0641 19.0634 17.7532 18.3173 17.5289C17.5712 17.3045 16.7987 17.1923 16 17.1923C15.2013 17.1923 14.4289 17.3045 13.6827 17.5289C12.9366 17.7532 12.2205 18.0641 11.5346 18.4616V19ZM16.0023 14.0962C15.3084 14.0962 14.7179 13.8533 14.2308 13.3677C13.7436 12.882 13.5 12.2923 13.5 11.5984C13.5 10.9046 13.7428 10.3141 14.2285 9.82695C14.7142 9.33976 15.3039 9.09617 15.9977 9.09617C16.6916 9.09617 17.2821 9.33901 17.7692 9.82467C18.2564 10.3104 18.5 10.9001 18.5 11.5939C18.5 12.2877 18.2572 12.8782 17.7715 13.3654C17.2858 13.8526 16.6961 14.0962 16.0023 14.0962ZM16 13.0962C16.4115 13.0962 16.7644 12.9491 17.0587 12.6548C17.3529 12.3606 17.5 12.0077 17.5 11.5962C17.5 11.1846 17.3529 10.8318 17.0587 10.5375C16.7644 10.2433 16.4115 10.0962 16 10.0962C15.5885 10.0962 15.2356 10.2433 14.9413 10.5375C14.6471 10.8318 14.5 11.1846 14.5 11.5962C14.5 12.0077 14.6471 12.3606 14.9413 12.6548C15.2356 12.9491 15.5885 13.0962 16 13.0962Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>MaviPiksel İnternet Çözümleri</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_271" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_271)">
+                        <path
+                          d="M15.3 15.9884L11.5 12.1884V7.49995H12.5V11.8115L15.9885 15.2999L15.3 15.9884ZM3.94616 16.0173C3.66539 15.4698 3.44873 14.8993 3.29616 14.3057C3.14359 13.7121 3.04872 13.1102 3.01154 12.4999H4.01731C4.05449 13.0294 4.14135 13.5461 4.27789 14.0499C4.41444 14.5538 4.60065 15.0429 4.83654 15.5173L3.94616 16.0173ZM3.01154 11.4999C3.04872 10.8897 3.1468 10.2868 3.30579 9.6913C3.46475 9.09578 3.68654 8.5179 3.97116 7.95765L4.83654 8.45765C4.58782 8.932 4.3984 9.42431 4.26829 9.93458C4.13815 10.4448 4.05449 10.9666 4.01731 11.4999H3.01154ZM7.09809 19.5346C6.57115 19.1884 6.08397 18.7939 5.63654 18.3509C5.1891 17.908 4.79231 17.423 4.44616 16.8961L5.31156 16.3769C5.60899 16.8307 5.95098 17.2509 6.33751 17.6375C6.72404 18.024 7.14424 18.366 7.59809 18.6634L7.09809 19.5346ZM5.33656 7.59802L4.44616 7.09802C4.79231 6.57109 5.1891 6.08712 5.63654 5.6461C6.08397 5.20507 6.57115 4.81147 7.09809 4.46532L7.59809 5.3365C7.14809 5.63393 6.73302 5.97271 6.35289 6.35282C5.97277 6.73296 5.63399 7.14803 5.33656 7.59802ZM11.5 20.9884C10.8898 20.9512 10.2869 20.8532 9.69136 20.6942C9.09584 20.5352 8.51796 20.3134 7.95771 20.0288L8.45771 19.1634C8.93206 19.4121 9.42437 19.6016 9.93464 19.7317C10.4449 19.8618 10.9667 19.9455 11.5 19.9826V20.9884ZM8.45771 4.83647L7.95771 3.9711C8.51796 3.68648 9.09584 3.46469 9.69136 3.30572C10.2869 3.14674 10.8898 3.04866 11.5 3.01147V4.01725C10.9667 4.05443 10.4449 4.13809 9.93464 4.26822C9.42437 4.39834 8.93206 4.58776 8.45771 4.83647ZM12.5 20.9884V19.9826C13.0333 19.9455 13.5551 19.8618 14.0654 19.7317C14.5757 19.6016 15.068 19.4121 15.5423 19.1634L16.0423 20.0288C15.4821 20.3134 14.9042 20.5352 14.3087 20.6942C13.7131 20.8532 13.1103 20.9512 12.5 20.9884ZM15.5423 4.83647C15.068 4.58776 14.5757 4.39834 14.0654 4.26822C13.5551 4.13809 13.0333 4.05443 12.5 4.01725V3.01147C13.1103 3.04866 13.7131 3.14674 14.3087 3.30572C14.9042 3.46469 15.4821 3.68648 16.0423 3.9711L15.5423 4.83647ZM16.9019 19.5346L16.4019 18.6634C16.8519 18.366 17.267 18.0272 17.6471 17.6471C18.0273 17.2669 18.366 16.8519 18.6635 16.4019L19.5346 16.9019C19.1885 17.4288 18.7949 17.9137 18.3539 18.3567C17.9128 18.7996 17.4289 19.1923 16.9019 19.5346ZM18.6635 7.5788C18.366 7.1288 18.0273 6.71694 17.6471 6.34322C17.267 5.96951 16.8519 5.63393 16.4019 5.3365L16.9019 4.46532C17.4289 4.80764 17.9128 5.19611 18.3539 5.63072C18.7949 6.06532 19.1866 6.54609 19.5289 7.07302L18.6635 7.5788ZM19.9827 11.4999C19.9455 10.9666 19.8587 10.4448 19.7221 9.93458C19.5856 9.42431 19.393 8.92559 19.1442 8.43842L20.0289 7.93265C20.3096 8.49675 20.5305 9.07656 20.6914 9.67207C20.8523 10.2676 20.9513 10.8769 20.9885 11.4999H19.9827ZM20.0289 16.0423L19.1635 15.5423C19.4122 15.0679 19.6016 14.5756 19.7317 14.0653C19.8619 13.5551 19.9455 13.0333 19.9827 12.4999H20.9885C20.9513 13.1102 20.8532 13.7131 20.6942 14.3086C20.5353 14.9041 20.3135 15.482 20.0289 16.0423Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>22.04.2023</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_276" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_276)">
+                        <path
+                          d="M16 13.5C16.4333 13.5 16.7917 13.3583 17.075 13.075C17.3583 12.7917 17.5 12.4333 17.5 12C17.5 11.5667 17.3583 11.2083 17.075 10.925C16.7917 10.6417 16.4333 10.5 16 10.5C15.5667 10.5 15.2083 10.6417 14.925 10.925C14.6417 11.2083 14.5 11.5667 14.5 12C14.5 12.4333 14.6417 12.7917 14.925 13.075C15.2083 13.3583 15.5667 13.5 16 13.5ZM5.61538 20C5.15513 20 4.77083 19.8458 4.4625 19.5375C4.15417 19.2292 4 18.8449 4 18.3846V5.61537C4 5.15512 4.15417 4.77083 4.4625 4.4625C4.77083 4.15417 5.15513 4 5.61538 4H18.3846C18.8449 4 19.2292 4.15417 19.5375 4.4625C19.8458 4.77083 20 5.15512 20 5.61537V8.55768H19V5.61537C19 5.43589 18.9423 5.28846 18.8269 5.17308C18.7115 5.05769 18.5641 5 18.3846 5H5.61538C5.43589 5 5.28846 5.05769 5.17308 5.17308C5.05769 5.28846 5 5.43589 5 5.61537V18.3846C5 18.5641 5.05769 18.7115 5.17308 18.8269C5.28846 18.9423 5.43589 19 5.61538 19H18.3846C18.5641 19 18.7115 18.9423 18.8269 18.8269C18.9423 18.7115 19 18.5641 19 18.3846V15.4423H20V18.3846C20 18.8449 19.8458 19.2292 19.5375 19.5375C19.2292 19.8458 18.8449 20 18.3846 20H5.61538ZM13.6154 16C13.1551 16 12.7708 15.8458 12.4625 15.5375C12.1542 15.2292 12 14.8449 12 14.3846V9.61538C12 9.15513 12.1542 8.77083 12.4625 8.4625C12.7708 8.15417 13.1551 8 13.6154 8H19.3846C19.8449 8 20.2292 8.15417 20.5375 8.4625C20.8458 8.77083 21 9.15513 21 9.61538V14.3846C21 14.8449 20.8458 15.2292 20.5375 15.5375C20.2292 15.8458 19.8449 16 19.3846 16H13.6154ZM19.3846 15C19.5641 15 19.7115 14.9423 19.8269 14.8269C19.9423 14.7115 20 14.5641 20 14.3846V9.61538C20 9.43589 19.9423 9.28846 19.8269 9.17308C19.7115 9.05769 19.5641 9 19.3846 9H13.6154C13.4359 9 13.2885 9.05769 13.1731 9.17308C13.0577 9.28846 13 9.43589 13 9.61538V14.3846C13 14.5641 13.0577 14.7115 13.1731 14.8269C13.2885 14.9423 13.4359 15 13.6154 15H19.3846Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>20-25K / ay</li>
+                  <li class="job-button text-center">Stajyer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-auto">
+            <div class="float-lg-end d-flex justify-content-center align-items-center">
+              <img src="./img/bookmark_add.svg" alt="">
+              <button class="hemen-basvur text-nowrap rounded ms-3"
+                style="width: 180px; height: 50px;border: none;">Hemen
+                Başvur</button>
+            </div>
+          </div>
+        </div>
+        <div class="row rounded job-list" style="min-height: 115px;">
+          <div class="col-md-9  d-flex">
+            <div class="col-2 me-1 my-auto"><img src="./img/mavi-piksel-new-01 1.svg" width="49px" height="49px"
+                class="bg-black rounded" alt=""></div>
+            <div class="col-10 flex-grow-1 my-auto">
+              <div class="row ">
+                <h4 class="fs-16 mt-2 fw-400">Frontend Developer</h4>
+              </div>
+              <div class="row">
+                <ul class="fs-14 d-flex align-content-start flex-wrap gap-2 text-nowrap fw-400 "
+                  style="list-style: none; ">
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_266" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_266)">
+                        <path
+                          d="M3 20V9.50002L10 4.21155L13.9904 7.2231C13.8045 7.28591 13.6308 7.35931 13.4692 7.4433C13.3077 7.52726 13.15 7.62822 12.9962 7.74617L10 5.46157L4 10V19H8.11538V20H3ZM10.5 20V18.6726C10.5 18.4281 10.5683 18.2029 10.7048 17.9971C10.8413 17.7914 11.0148 17.6224 11.225 17.4904C11.9532 17.0532 12.7189 16.7276 13.5221 16.5135C14.3253 16.2994 15.1513 16.1923 16 16.1923C16.8487 16.1923 17.6747 16.2994 18.4779 16.5135C19.2811 16.7276 20.0468 17.0532 20.775 17.4904C20.9853 17.6224 21.1586 17.7914 21.2952 17.9971C21.4317 18.2029 21.5 18.4281 21.5 18.6726V20H10.5ZM11.5346 19H20.4654V18.4616C19.7795 18.0641 19.0634 17.7532 18.3173 17.5289C17.5712 17.3045 16.7987 17.1923 16 17.1923C15.2013 17.1923 14.4289 17.3045 13.6827 17.5289C12.9366 17.7532 12.2205 18.0641 11.5346 18.4616V19ZM16.0023 14.0962C15.3084 14.0962 14.7179 13.8533 14.2308 13.3677C13.7436 12.882 13.5 12.2923 13.5 11.5984C13.5 10.9046 13.7428 10.3141 14.2285 9.82695C14.7142 9.33976 15.3039 9.09617 15.9977 9.09617C16.6916 9.09617 17.2821 9.33901 17.7692 9.82467C18.2564 10.3104 18.5 10.9001 18.5 11.5939C18.5 12.2877 18.2572 12.8782 17.7715 13.3654C17.2858 13.8526 16.6961 14.0962 16.0023 14.0962ZM16 13.0962C16.4115 13.0962 16.7644 12.9491 17.0587 12.6548C17.3529 12.3606 17.5 12.0077 17.5 11.5962C17.5 11.1846 17.3529 10.8318 17.0587 10.5375C16.7644 10.2433 16.4115 10.0962 16 10.0962C15.5885 10.0962 15.2356 10.2433 14.9413 10.5375C14.6471 10.8318 14.5 11.1846 14.5 11.5962C14.5 12.0077 14.6471 12.3606 14.9413 12.6548C15.2356 12.9491 15.5885 13.0962 16 13.0962Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>MaviPiksel İnternet Çözümleri</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_271" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_271)">
+                        <path
+                          d="M15.3 15.9884L11.5 12.1884V7.49995H12.5V11.8115L15.9885 15.2999L15.3 15.9884ZM3.94616 16.0173C3.66539 15.4698 3.44873 14.8993 3.29616 14.3057C3.14359 13.7121 3.04872 13.1102 3.01154 12.4999H4.01731C4.05449 13.0294 4.14135 13.5461 4.27789 14.0499C4.41444 14.5538 4.60065 15.0429 4.83654 15.5173L3.94616 16.0173ZM3.01154 11.4999C3.04872 10.8897 3.1468 10.2868 3.30579 9.6913C3.46475 9.09578 3.68654 8.5179 3.97116 7.95765L4.83654 8.45765C4.58782 8.932 4.3984 9.42431 4.26829 9.93458C4.13815 10.4448 4.05449 10.9666 4.01731 11.4999H3.01154ZM7.09809 19.5346C6.57115 19.1884 6.08397 18.7939 5.63654 18.3509C5.1891 17.908 4.79231 17.423 4.44616 16.8961L5.31156 16.3769C5.60899 16.8307 5.95098 17.2509 6.33751 17.6375C6.72404 18.024 7.14424 18.366 7.59809 18.6634L7.09809 19.5346ZM5.33656 7.59802L4.44616 7.09802C4.79231 6.57109 5.1891 6.08712 5.63654 5.6461C6.08397 5.20507 6.57115 4.81147 7.09809 4.46532L7.59809 5.3365C7.14809 5.63393 6.73302 5.97271 6.35289 6.35282C5.97277 6.73296 5.63399 7.14803 5.33656 7.59802ZM11.5 20.9884C10.8898 20.9512 10.2869 20.8532 9.69136 20.6942C9.09584 20.5352 8.51796 20.3134 7.95771 20.0288L8.45771 19.1634C8.93206 19.4121 9.42437 19.6016 9.93464 19.7317C10.4449 19.8618 10.9667 19.9455 11.5 19.9826V20.9884ZM8.45771 4.83647L7.95771 3.9711C8.51796 3.68648 9.09584 3.46469 9.69136 3.30572C10.2869 3.14674 10.8898 3.04866 11.5 3.01147V4.01725C10.9667 4.05443 10.4449 4.13809 9.93464 4.26822C9.42437 4.39834 8.93206 4.58776 8.45771 4.83647ZM12.5 20.9884V19.9826C13.0333 19.9455 13.5551 19.8618 14.0654 19.7317C14.5757 19.6016 15.068 19.4121 15.5423 19.1634L16.0423 20.0288C15.4821 20.3134 14.9042 20.5352 14.3087 20.6942C13.7131 20.8532 13.1103 20.9512 12.5 20.9884ZM15.5423 4.83647C15.068 4.58776 14.5757 4.39834 14.0654 4.26822C13.5551 4.13809 13.0333 4.05443 12.5 4.01725V3.01147C13.1103 3.04866 13.7131 3.14674 14.3087 3.30572C14.9042 3.46469 15.4821 3.68648 16.0423 3.9711L15.5423 4.83647ZM16.9019 19.5346L16.4019 18.6634C16.8519 18.366 17.267 18.0272 17.6471 17.6471C18.0273 17.2669 18.366 16.8519 18.6635 16.4019L19.5346 16.9019C19.1885 17.4288 18.7949 17.9137 18.3539 18.3567C17.9128 18.7996 17.4289 19.1923 16.9019 19.5346ZM18.6635 7.5788C18.366 7.1288 18.0273 6.71694 17.6471 6.34322C17.267 5.96951 16.8519 5.63393 16.4019 5.3365L16.9019 4.46532C17.4289 4.80764 17.9128 5.19611 18.3539 5.63072C18.7949 6.06532 19.1866 6.54609 19.5289 7.07302L18.6635 7.5788ZM19.9827 11.4999C19.9455 10.9666 19.8587 10.4448 19.7221 9.93458C19.5856 9.42431 19.393 8.92559 19.1442 8.43842L20.0289 7.93265C20.3096 8.49675 20.5305 9.07656 20.6914 9.67207C20.8523 10.2676 20.9513 10.8769 20.9885 11.4999H19.9827ZM20.0289 16.0423L19.1635 15.5423C19.4122 15.0679 19.6016 14.5756 19.7317 14.0653C19.8619 13.5551 19.9455 13.0333 19.9827 12.4999H20.9885C20.9513 13.1102 20.8532 13.7131 20.6942 14.3086C20.5353 14.9041 20.3135 15.482 20.0289 16.0423Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>22.04.2023</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_276" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_276)">
+                        <path
+                          d="M16 13.5C16.4333 13.5 16.7917 13.3583 17.075 13.075C17.3583 12.7917 17.5 12.4333 17.5 12C17.5 11.5667 17.3583 11.2083 17.075 10.925C16.7917 10.6417 16.4333 10.5 16 10.5C15.5667 10.5 15.2083 10.6417 14.925 10.925C14.6417 11.2083 14.5 11.5667 14.5 12C14.5 12.4333 14.6417 12.7917 14.925 13.075C15.2083 13.3583 15.5667 13.5 16 13.5ZM5.61538 20C5.15513 20 4.77083 19.8458 4.4625 19.5375C4.15417 19.2292 4 18.8449 4 18.3846V5.61537C4 5.15512 4.15417 4.77083 4.4625 4.4625C4.77083 4.15417 5.15513 4 5.61538 4H18.3846C18.8449 4 19.2292 4.15417 19.5375 4.4625C19.8458 4.77083 20 5.15512 20 5.61537V8.55768H19V5.61537C19 5.43589 18.9423 5.28846 18.8269 5.17308C18.7115 5.05769 18.5641 5 18.3846 5H5.61538C5.43589 5 5.28846 5.05769 5.17308 5.17308C5.05769 5.28846 5 5.43589 5 5.61537V18.3846C5 18.5641 5.05769 18.7115 5.17308 18.8269C5.28846 18.9423 5.43589 19 5.61538 19H18.3846C18.5641 19 18.7115 18.9423 18.8269 18.8269C18.9423 18.7115 19 18.5641 19 18.3846V15.4423H20V18.3846C20 18.8449 19.8458 19.2292 19.5375 19.5375C19.2292 19.8458 18.8449 20 18.3846 20H5.61538ZM13.6154 16C13.1551 16 12.7708 15.8458 12.4625 15.5375C12.1542 15.2292 12 14.8449 12 14.3846V9.61538C12 9.15513 12.1542 8.77083 12.4625 8.4625C12.7708 8.15417 13.1551 8 13.6154 8H19.3846C19.8449 8 20.2292 8.15417 20.5375 8.4625C20.8458 8.77083 21 9.15513 21 9.61538V14.3846C21 14.8449 20.8458 15.2292 20.5375 15.5375C20.2292 15.8458 19.8449 16 19.3846 16H13.6154ZM19.3846 15C19.5641 15 19.7115 14.9423 19.8269 14.8269C19.9423 14.7115 20 14.5641 20 14.3846V9.61538C20 9.43589 19.9423 9.28846 19.8269 9.17308C19.7115 9.05769 19.5641 9 19.3846 9H13.6154C13.4359 9 13.2885 9.05769 13.1731 9.17308C13.0577 9.28846 13 9.43589 13 9.61538V14.3846C13 14.5641 13.0577 14.7115 13.1731 14.8269C13.2885 14.9423 13.4359 15 13.6154 15H19.3846Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>20-25K / ay</li>
+                  <li class="job-button text-center">Stajyer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-auto">
+            <div class="float-lg-end d-flex justify-content-center align-items-center">
+              <img src="./img/bookmark_add.svg" alt="">
+              <button class="hemen-basvur text-nowrap rounded ms-3"
+                style="width: 180px; height: 50px;border: none;">Hemen
+                Başvur</button>
+            </div>
+          </div>
+        </div>
+        <div class="row rounded job-list" style="min-height: 115px;">
+          <div class="col-md-9  d-flex">
+            <div class="col-2 me-1 my-auto"><img src="./img/mavi-piksel-new-01 1.svg" width="49px" height="49px"
+                class="bg-black rounded" alt=""></div>
+            <div class="col-10 flex-grow-1 my-auto">
+              <div class="row ">
+                <h4 class="fs-16 mt-2 fw-400">Frontend Developer</h4>
+              </div>
+              <div class="row">
+                <ul class="fs-14 d-flex align-content-start flex-wrap gap-2 text-nowrap fw-400 "
+                  style="list-style: none; ">
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_266" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_266)">
+                        <path
+                          d="M3 20V9.50002L10 4.21155L13.9904 7.2231C13.8045 7.28591 13.6308 7.35931 13.4692 7.4433C13.3077 7.52726 13.15 7.62822 12.9962 7.74617L10 5.46157L4 10V19H8.11538V20H3ZM10.5 20V18.6726C10.5 18.4281 10.5683 18.2029 10.7048 17.9971C10.8413 17.7914 11.0148 17.6224 11.225 17.4904C11.9532 17.0532 12.7189 16.7276 13.5221 16.5135C14.3253 16.2994 15.1513 16.1923 16 16.1923C16.8487 16.1923 17.6747 16.2994 18.4779 16.5135C19.2811 16.7276 20.0468 17.0532 20.775 17.4904C20.9853 17.6224 21.1586 17.7914 21.2952 17.9971C21.4317 18.2029 21.5 18.4281 21.5 18.6726V20H10.5ZM11.5346 19H20.4654V18.4616C19.7795 18.0641 19.0634 17.7532 18.3173 17.5289C17.5712 17.3045 16.7987 17.1923 16 17.1923C15.2013 17.1923 14.4289 17.3045 13.6827 17.5289C12.9366 17.7532 12.2205 18.0641 11.5346 18.4616V19ZM16.0023 14.0962C15.3084 14.0962 14.7179 13.8533 14.2308 13.3677C13.7436 12.882 13.5 12.2923 13.5 11.5984C13.5 10.9046 13.7428 10.3141 14.2285 9.82695C14.7142 9.33976 15.3039 9.09617 15.9977 9.09617C16.6916 9.09617 17.2821 9.33901 17.7692 9.82467C18.2564 10.3104 18.5 10.9001 18.5 11.5939C18.5 12.2877 18.2572 12.8782 17.7715 13.3654C17.2858 13.8526 16.6961 14.0962 16.0023 14.0962ZM16 13.0962C16.4115 13.0962 16.7644 12.9491 17.0587 12.6548C17.3529 12.3606 17.5 12.0077 17.5 11.5962C17.5 11.1846 17.3529 10.8318 17.0587 10.5375C16.7644 10.2433 16.4115 10.0962 16 10.0962C15.5885 10.0962 15.2356 10.2433 14.9413 10.5375C14.6471 10.8318 14.5 11.1846 14.5 11.5962C14.5 12.0077 14.6471 12.3606 14.9413 12.6548C15.2356 12.9491 15.5885 13.0962 16 13.0962Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>MaviPiksel İnternet Çözümleri</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_271" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_271)">
+                        <path
+                          d="M15.3 15.9884L11.5 12.1884V7.49995H12.5V11.8115L15.9885 15.2999L15.3 15.9884ZM3.94616 16.0173C3.66539 15.4698 3.44873 14.8993 3.29616 14.3057C3.14359 13.7121 3.04872 13.1102 3.01154 12.4999H4.01731C4.05449 13.0294 4.14135 13.5461 4.27789 14.0499C4.41444 14.5538 4.60065 15.0429 4.83654 15.5173L3.94616 16.0173ZM3.01154 11.4999C3.04872 10.8897 3.1468 10.2868 3.30579 9.6913C3.46475 9.09578 3.68654 8.5179 3.97116 7.95765L4.83654 8.45765C4.58782 8.932 4.3984 9.42431 4.26829 9.93458C4.13815 10.4448 4.05449 10.9666 4.01731 11.4999H3.01154ZM7.09809 19.5346C6.57115 19.1884 6.08397 18.7939 5.63654 18.3509C5.1891 17.908 4.79231 17.423 4.44616 16.8961L5.31156 16.3769C5.60899 16.8307 5.95098 17.2509 6.33751 17.6375C6.72404 18.024 7.14424 18.366 7.59809 18.6634L7.09809 19.5346ZM5.33656 7.59802L4.44616 7.09802C4.79231 6.57109 5.1891 6.08712 5.63654 5.6461C6.08397 5.20507 6.57115 4.81147 7.09809 4.46532L7.59809 5.3365C7.14809 5.63393 6.73302 5.97271 6.35289 6.35282C5.97277 6.73296 5.63399 7.14803 5.33656 7.59802ZM11.5 20.9884C10.8898 20.9512 10.2869 20.8532 9.69136 20.6942C9.09584 20.5352 8.51796 20.3134 7.95771 20.0288L8.45771 19.1634C8.93206 19.4121 9.42437 19.6016 9.93464 19.7317C10.4449 19.8618 10.9667 19.9455 11.5 19.9826V20.9884ZM8.45771 4.83647L7.95771 3.9711C8.51796 3.68648 9.09584 3.46469 9.69136 3.30572C10.2869 3.14674 10.8898 3.04866 11.5 3.01147V4.01725C10.9667 4.05443 10.4449 4.13809 9.93464 4.26822C9.42437 4.39834 8.93206 4.58776 8.45771 4.83647ZM12.5 20.9884V19.9826C13.0333 19.9455 13.5551 19.8618 14.0654 19.7317C14.5757 19.6016 15.068 19.4121 15.5423 19.1634L16.0423 20.0288C15.4821 20.3134 14.9042 20.5352 14.3087 20.6942C13.7131 20.8532 13.1103 20.9512 12.5 20.9884ZM15.5423 4.83647C15.068 4.58776 14.5757 4.39834 14.0654 4.26822C13.5551 4.13809 13.0333 4.05443 12.5 4.01725V3.01147C13.1103 3.04866 13.7131 3.14674 14.3087 3.30572C14.9042 3.46469 15.4821 3.68648 16.0423 3.9711L15.5423 4.83647ZM16.9019 19.5346L16.4019 18.6634C16.8519 18.366 17.267 18.0272 17.6471 17.6471C18.0273 17.2669 18.366 16.8519 18.6635 16.4019L19.5346 16.9019C19.1885 17.4288 18.7949 17.9137 18.3539 18.3567C17.9128 18.7996 17.4289 19.1923 16.9019 19.5346ZM18.6635 7.5788C18.366 7.1288 18.0273 6.71694 17.6471 6.34322C17.267 5.96951 16.8519 5.63393 16.4019 5.3365L16.9019 4.46532C17.4289 4.80764 17.9128 5.19611 18.3539 5.63072C18.7949 6.06532 19.1866 6.54609 19.5289 7.07302L18.6635 7.5788ZM19.9827 11.4999C19.9455 10.9666 19.8587 10.4448 19.7221 9.93458C19.5856 9.42431 19.393 8.92559 19.1442 8.43842L20.0289 7.93265C20.3096 8.49675 20.5305 9.07656 20.6914 9.67207C20.8523 10.2676 20.9513 10.8769 20.9885 11.4999H19.9827ZM20.0289 16.0423L19.1635 15.5423C19.4122 15.0679 19.6016 14.5756 19.7317 14.0653C19.8619 13.5551 19.9455 13.0333 19.9827 12.4999H20.9885C20.9513 13.1102 20.8532 13.7131 20.6942 14.3086C20.5353 14.9041 20.3135 15.482 20.0289 16.0423Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>22.04.2023</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_276" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_276)">
+                        <path
+                          d="M16 13.5C16.4333 13.5 16.7917 13.3583 17.075 13.075C17.3583 12.7917 17.5 12.4333 17.5 12C17.5 11.5667 17.3583 11.2083 17.075 10.925C16.7917 10.6417 16.4333 10.5 16 10.5C15.5667 10.5 15.2083 10.6417 14.925 10.925C14.6417 11.2083 14.5 11.5667 14.5 12C14.5 12.4333 14.6417 12.7917 14.925 13.075C15.2083 13.3583 15.5667 13.5 16 13.5ZM5.61538 20C5.15513 20 4.77083 19.8458 4.4625 19.5375C4.15417 19.2292 4 18.8449 4 18.3846V5.61537C4 5.15512 4.15417 4.77083 4.4625 4.4625C4.77083 4.15417 5.15513 4 5.61538 4H18.3846C18.8449 4 19.2292 4.15417 19.5375 4.4625C19.8458 4.77083 20 5.15512 20 5.61537V8.55768H19V5.61537C19 5.43589 18.9423 5.28846 18.8269 5.17308C18.7115 5.05769 18.5641 5 18.3846 5H5.61538C5.43589 5 5.28846 5.05769 5.17308 5.17308C5.05769 5.28846 5 5.43589 5 5.61537V18.3846C5 18.5641 5.05769 18.7115 5.17308 18.8269C5.28846 18.9423 5.43589 19 5.61538 19H18.3846C18.5641 19 18.7115 18.9423 18.8269 18.8269C18.9423 18.7115 19 18.5641 19 18.3846V15.4423H20V18.3846C20 18.8449 19.8458 19.2292 19.5375 19.5375C19.2292 19.8458 18.8449 20 18.3846 20H5.61538ZM13.6154 16C13.1551 16 12.7708 15.8458 12.4625 15.5375C12.1542 15.2292 12 14.8449 12 14.3846V9.61538C12 9.15513 12.1542 8.77083 12.4625 8.4625C12.7708 8.15417 13.1551 8 13.6154 8H19.3846C19.8449 8 20.2292 8.15417 20.5375 8.4625C20.8458 8.77083 21 9.15513 21 9.61538V14.3846C21 14.8449 20.8458 15.2292 20.5375 15.5375C20.2292 15.8458 19.8449 16 19.3846 16H13.6154ZM19.3846 15C19.5641 15 19.7115 14.9423 19.8269 14.8269C19.9423 14.7115 20 14.5641 20 14.3846V9.61538C20 9.43589 19.9423 9.28846 19.8269 9.17308C19.7115 9.05769 19.5641 9 19.3846 9H13.6154C13.4359 9 13.2885 9.05769 13.1731 9.17308C13.0577 9.28846 13 9.43589 13 9.61538V14.3846C13 14.5641 13.0577 14.7115 13.1731 14.8269C13.2885 14.9423 13.4359 15 13.6154 15H19.3846Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>20-25K / ay</li>
+                  <li class="job-button text-center">Stajyer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-auto">
+            <div class="float-lg-end d-flex justify-content-center align-items-center">
+              <img src="./img/bookmark_add.svg" alt="">
+              <button class="hemen-basvur text-nowrap rounded ms-3"
+                style="width: 180px; height: 50px;border: none;">Hemen
+                Başvur</button>
+            </div>
+          </div>
+        </div>
+        <div class="row rounded job-list" style="min-height: 115px;">
+          <div class="col-md-9  d-flex">
+            <div class="col-2 me-1 my-auto"><img src="./img/mavi-piksel-new-01 1.svg" width="49px" height="49px"
+                class="bg-black rounded" alt=""></div>
+            <div class="col-10 flex-grow-1 my-auto">
+              <div class="row ">
+                <h4 class="fs-16 mt-2 fw-400">Frontend Developer</h4>
+              </div>
+              <div class="row">
+                <ul class="fs-14 d-flex align-content-start flex-wrap gap-2 text-nowrap fw-400 "
+                  style="list-style: none; ">
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_266" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_266)">
+                        <path
+                          d="M3 20V9.50002L10 4.21155L13.9904 7.2231C13.8045 7.28591 13.6308 7.35931 13.4692 7.4433C13.3077 7.52726 13.15 7.62822 12.9962 7.74617L10 5.46157L4 10V19H8.11538V20H3ZM10.5 20V18.6726C10.5 18.4281 10.5683 18.2029 10.7048 17.9971C10.8413 17.7914 11.0148 17.6224 11.225 17.4904C11.9532 17.0532 12.7189 16.7276 13.5221 16.5135C14.3253 16.2994 15.1513 16.1923 16 16.1923C16.8487 16.1923 17.6747 16.2994 18.4779 16.5135C19.2811 16.7276 20.0468 17.0532 20.775 17.4904C20.9853 17.6224 21.1586 17.7914 21.2952 17.9971C21.4317 18.2029 21.5 18.4281 21.5 18.6726V20H10.5ZM11.5346 19H20.4654V18.4616C19.7795 18.0641 19.0634 17.7532 18.3173 17.5289C17.5712 17.3045 16.7987 17.1923 16 17.1923C15.2013 17.1923 14.4289 17.3045 13.6827 17.5289C12.9366 17.7532 12.2205 18.0641 11.5346 18.4616V19ZM16.0023 14.0962C15.3084 14.0962 14.7179 13.8533 14.2308 13.3677C13.7436 12.882 13.5 12.2923 13.5 11.5984C13.5 10.9046 13.7428 10.3141 14.2285 9.82695C14.7142 9.33976 15.3039 9.09617 15.9977 9.09617C16.6916 9.09617 17.2821 9.33901 17.7692 9.82467C18.2564 10.3104 18.5 10.9001 18.5 11.5939C18.5 12.2877 18.2572 12.8782 17.7715 13.3654C17.2858 13.8526 16.6961 14.0962 16.0023 14.0962ZM16 13.0962C16.4115 13.0962 16.7644 12.9491 17.0587 12.6548C17.3529 12.3606 17.5 12.0077 17.5 11.5962C17.5 11.1846 17.3529 10.8318 17.0587 10.5375C16.7644 10.2433 16.4115 10.0962 16 10.0962C15.5885 10.0962 15.2356 10.2433 14.9413 10.5375C14.6471 10.8318 14.5 11.1846 14.5 11.5962C14.5 12.0077 14.6471 12.3606 14.9413 12.6548C15.2356 12.9491 15.5885 13.0962 16 13.0962Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>MaviPiksel İnternet Çözümleri</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_271" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_271)">
+                        <path
+                          d="M15.3 15.9884L11.5 12.1884V7.49995H12.5V11.8115L15.9885 15.2999L15.3 15.9884ZM3.94616 16.0173C3.66539 15.4698 3.44873 14.8993 3.29616 14.3057C3.14359 13.7121 3.04872 13.1102 3.01154 12.4999H4.01731C4.05449 13.0294 4.14135 13.5461 4.27789 14.0499C4.41444 14.5538 4.60065 15.0429 4.83654 15.5173L3.94616 16.0173ZM3.01154 11.4999C3.04872 10.8897 3.1468 10.2868 3.30579 9.6913C3.46475 9.09578 3.68654 8.5179 3.97116 7.95765L4.83654 8.45765C4.58782 8.932 4.3984 9.42431 4.26829 9.93458C4.13815 10.4448 4.05449 10.9666 4.01731 11.4999H3.01154ZM7.09809 19.5346C6.57115 19.1884 6.08397 18.7939 5.63654 18.3509C5.1891 17.908 4.79231 17.423 4.44616 16.8961L5.31156 16.3769C5.60899 16.8307 5.95098 17.2509 6.33751 17.6375C6.72404 18.024 7.14424 18.366 7.59809 18.6634L7.09809 19.5346ZM5.33656 7.59802L4.44616 7.09802C4.79231 6.57109 5.1891 6.08712 5.63654 5.6461C6.08397 5.20507 6.57115 4.81147 7.09809 4.46532L7.59809 5.3365C7.14809 5.63393 6.73302 5.97271 6.35289 6.35282C5.97277 6.73296 5.63399 7.14803 5.33656 7.59802ZM11.5 20.9884C10.8898 20.9512 10.2869 20.8532 9.69136 20.6942C9.09584 20.5352 8.51796 20.3134 7.95771 20.0288L8.45771 19.1634C8.93206 19.4121 9.42437 19.6016 9.93464 19.7317C10.4449 19.8618 10.9667 19.9455 11.5 19.9826V20.9884ZM8.45771 4.83647L7.95771 3.9711C8.51796 3.68648 9.09584 3.46469 9.69136 3.30572C10.2869 3.14674 10.8898 3.04866 11.5 3.01147V4.01725C10.9667 4.05443 10.4449 4.13809 9.93464 4.26822C9.42437 4.39834 8.93206 4.58776 8.45771 4.83647ZM12.5 20.9884V19.9826C13.0333 19.9455 13.5551 19.8618 14.0654 19.7317C14.5757 19.6016 15.068 19.4121 15.5423 19.1634L16.0423 20.0288C15.4821 20.3134 14.9042 20.5352 14.3087 20.6942C13.7131 20.8532 13.1103 20.9512 12.5 20.9884ZM15.5423 4.83647C15.068 4.58776 14.5757 4.39834 14.0654 4.26822C13.5551 4.13809 13.0333 4.05443 12.5 4.01725V3.01147C13.1103 3.04866 13.7131 3.14674 14.3087 3.30572C14.9042 3.46469 15.4821 3.68648 16.0423 3.9711L15.5423 4.83647ZM16.9019 19.5346L16.4019 18.6634C16.8519 18.366 17.267 18.0272 17.6471 17.6471C18.0273 17.2669 18.366 16.8519 18.6635 16.4019L19.5346 16.9019C19.1885 17.4288 18.7949 17.9137 18.3539 18.3567C17.9128 18.7996 17.4289 19.1923 16.9019 19.5346ZM18.6635 7.5788C18.366 7.1288 18.0273 6.71694 17.6471 6.34322C17.267 5.96951 16.8519 5.63393 16.4019 5.3365L16.9019 4.46532C17.4289 4.80764 17.9128 5.19611 18.3539 5.63072C18.7949 6.06532 19.1866 6.54609 19.5289 7.07302L18.6635 7.5788ZM19.9827 11.4999C19.9455 10.9666 19.8587 10.4448 19.7221 9.93458C19.5856 9.42431 19.393 8.92559 19.1442 8.43842L20.0289 7.93265C20.3096 8.49675 20.5305 9.07656 20.6914 9.67207C20.8523 10.2676 20.9513 10.8769 20.9885 11.4999H19.9827ZM20.0289 16.0423L19.1635 15.5423C19.4122 15.0679 19.6016 14.5756 19.7317 14.0653C19.8619 13.5551 19.9455 13.0333 19.9827 12.4999H20.9885C20.9513 13.1102 20.8532 13.7131 20.6942 14.3086C20.5353 14.9041 20.3135 15.482 20.0289 16.0423Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>22.04.2023</li>
+
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <mask id="mask0_0_276" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                        height="24">
+                        <rect width="24" height="24" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_0_276)">
+                        <path
+                          d="M16 13.5C16.4333 13.5 16.7917 13.3583 17.075 13.075C17.3583 12.7917 17.5 12.4333 17.5 12C17.5 11.5667 17.3583 11.2083 17.075 10.925C16.7917 10.6417 16.4333 10.5 16 10.5C15.5667 10.5 15.2083 10.6417 14.925 10.925C14.6417 11.2083 14.5 11.5667 14.5 12C14.5 12.4333 14.6417 12.7917 14.925 13.075C15.2083 13.3583 15.5667 13.5 16 13.5ZM5.61538 20C5.15513 20 4.77083 19.8458 4.4625 19.5375C4.15417 19.2292 4 18.8449 4 18.3846V5.61537C4 5.15512 4.15417 4.77083 4.4625 4.4625C4.77083 4.15417 5.15513 4 5.61538 4H18.3846C18.8449 4 19.2292 4.15417 19.5375 4.4625C19.8458 4.77083 20 5.15512 20 5.61537V8.55768H19V5.61537C19 5.43589 18.9423 5.28846 18.8269 5.17308C18.7115 5.05769 18.5641 5 18.3846 5H5.61538C5.43589 5 5.28846 5.05769 5.17308 5.17308C5.05769 5.28846 5 5.43589 5 5.61537V18.3846C5 18.5641 5.05769 18.7115 5.17308 18.8269C5.28846 18.9423 5.43589 19 5.61538 19H18.3846C18.5641 19 18.7115 18.9423 18.8269 18.8269C18.9423 18.7115 19 18.5641 19 18.3846V15.4423H20V18.3846C20 18.8449 19.8458 19.2292 19.5375 19.5375C19.2292 19.8458 18.8449 20 18.3846 20H5.61538ZM13.6154 16C13.1551 16 12.7708 15.8458 12.4625 15.5375C12.1542 15.2292 12 14.8449 12 14.3846V9.61538C12 9.15513 12.1542 8.77083 12.4625 8.4625C12.7708 8.15417 13.1551 8 13.6154 8H19.3846C19.8449 8 20.2292 8.15417 20.5375 8.4625C20.8458 8.77083 21 9.15513 21 9.61538V14.3846C21 14.8449 20.8458 15.2292 20.5375 15.5375C20.2292 15.8458 19.8449 16 19.3846 16H13.6154ZM19.3846 15C19.5641 15 19.7115 14.9423 19.8269 14.8269C19.9423 14.7115 20 14.5641 20 14.3846V9.61538C20 9.43589 19.9423 9.28846 19.8269 9.17308C19.7115 9.05769 19.5641 9 19.3846 9H13.6154C13.4359 9 13.2885 9.05769 13.1731 9.17308C13.0577 9.28846 13 9.43589 13 9.61538V14.3846C13 14.5641 13.0577 14.7115 13.1731 14.8269C13.2885 14.9423 13.4359 15 13.6154 15H19.3846Z"
+                          fill="#646464" />
+                      </g>
+                    </svg>20-25K / ay</li>
+                  <li class="job-button text-center">Stajyer</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 my-auto">
+            <div class="float-lg-end d-flex justify-content-center align-items-center">
+              <img src="./img/bookmark_add.svg" alt="">
+              <button class="hemen-basvur text-nowrap rounded ms-3"
+                style="width: 180px; height: 50px;border: none;">Hemen
+                Başvur</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn green border-0 mx-auto mt-5 btn-outline-info text-white"
+            style="width: 312px; height: 60px;">Daha Fazla İlan Yükle</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row d-flex">
+        <div class=" flex-column ">
+          <h2>Öne Çıkan <span class="purple-text">Adaylar</span></h2>
+        </div>
+        <div class="row  mt-1">
+          <div class="col-md-8">
+            <p>12.456 kayıtlı aday - 206 bugün kaydolan</p>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <a style="color: #2D4171;
+          " class="fw-400 fs-16 text-decoration-none" href="">Tüm adayları görüntüle <img
+                src="./img/arrow_forward_ios.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card mb-3 w-100" style="max-width: 640px; ">
+              <div class="row g-0">
+                <div class="col-3  m-auto">
+                  <img src="./img/cetin.png" class="img-fluid ms-3 rounded-start" alt="...">
+                </div>
+                <div class="col-9">
+                  <div class="card-body pe-0">
+                    <div class="row text-center text-sm-start text-md-center text-lg-start ">
+                      <h5 class="card-title fs-16 fw-500">Çetin Soysal</h5>
+                    </div>
+                    <div class="row  text-center">
+                      <p
+                        class="card-text col-12 text-sm-start text-md-center text-lg-start col-sm-6 col-md-12 col-lg-6 purple-text my-auto fw-400 fs-14">
+                        Veri Mühendisi</p>
+                      <div class="card-body col-12 col-sm-6 text-md-center text-lg-start col-md-12 col-lg-6 px-0">
+                        <button class="btn profile-button border-0 fs-14 fw-400 mx-auto text-nowrap ">Profili
+                          Görüntüle</button>
+                      </div>
+                    </div>
+                    <div class="row  text-center text-sm-start text-md-center text-lg-start">
+                      <p class="card-text fw-400 ps-1 fs-14"><svg xmlns="http://www.w3.org/2000/svg" width="26"
+                          height="26" viewBox="0 0 26 26" fill="none">
+                          <mask id="mask0_0_424" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="26" height="26">
+                            <rect width="26" height="26" fill="#D9D9D9" />
+                          </mask>
+                          <g mask="url(#mask0_0_424)">
+                            <path
+                              d="M13.125 12.2758C13.582 12.2758 13.967 12.1269 14.2802 11.8289C14.5934 11.5309 14.75 11.1646 14.75 10.7299C14.75 10.2951 14.5934 9.92879 14.2802 9.63083C13.967 9.33287 13.582 9.18389 13.125 9.18389C12.6681 9.18389 12.283 9.33287 11.9698 9.63083C11.6566 9.92879 11.5 10.2951 11.5 10.7299C11.5 11.1646 11.6566 11.5309 11.9698 11.8289C12.283 12.1269 12.6681 12.2758 13.125 12.2758ZM13.125 21.298C15.3833 19.427 17.1215 17.5536 18.3396 15.678C19.5576 13.8023 20.1667 12.2217 20.1667 10.936C20.1667 8.90508 19.4872 7.24647 18.1281 5.96015C16.7691 4.67382 15.1014 4.03065 13.125 4.03065C11.1486 4.03065 9.48091 4.67382 8.12187 5.96015C6.76285 7.24647 6.08333 8.90508 6.08333 10.936C6.08333 12.2217 6.69237 13.8023 7.91043 15.678C9.12848 17.5536 10.8667 19.427 13.125 21.298ZM13.125 22.7012C10.3847 20.3876 8.34549 18.2414 7.00728 16.2627C5.66909 14.284 5 12.5084 5 10.936C5 8.51794 5.8191 6.59075 7.4573 5.15444C9.09548 3.71815 10.9847 3 13.125 3C15.2653 3 17.1545 3.71815 18.7927 5.15444C20.4309 6.59075 21.25 8.51794 21.25 10.936C21.25 12.5084 20.5809 14.284 19.2427 16.2627C17.9045 18.2414 15.8653 20.3876 13.125 22.7012Z"
+                              fill="#1D1D1D" />
+                          </g>
+                        </svg>Eskişehir</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3 w-100" style="max-width: 640px;">
+              <div class="row g-0">
+                <div class="col-3 m-auto">
+                  <img src="./img/naz.png" class="img-fluid ms-3 rounded-start" alt="...">
+                </div>
+                <div class="col-9">
+                  <div class="card-body pe-0">
+                    <div class="row text-center text-sm-start text-md-center text-lg-start ">
+                      <h5 class="card-title fs-14 fw-500">Naz Dogançay</h5>
+                    </div>
+                    <div class="row text-center">
+                      <p
+                        class="card-text col-12 text-sm-start text-md-center text-lg-start col-sm-6 col-md-12 col-lg-6 purple-text my-auto fw-400 fs-14">
+                        Hasta İlişkileri Sorumlusu</p>
+                      <div class="card-body col-12 col-sm-6 text-md-center text-lg-start col-md-12 col-lg-6 px-0">
+                        <button class="btn profile-button border-0 fs-14 fw-400 mx-auto text-nowrap  ">Profili
+                          Görüntüle</button>
+                      </div>
+                    </div>
+                    <div class="row  text-center text-sm-start text-md-center text-lg-start">
+                      <p class="card-text fs-14 ps-1 fw-400"><svg xmlns="http://www.w3.org/2000/svg" width="26"
+                          height="26" viewBox="0 0 26 26" fill="none">
+                          <mask id="mask0_0_424" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="26" height="26">
+                            <rect width="26" height="26" fill="#D9D9D9" />
+                          </mask>
+                          <g mask="url(#mask0_0_424)">
+                            <path
+                              d="M13.125 12.2758C13.582 12.2758 13.967 12.1269 14.2802 11.8289C14.5934 11.5309 14.75 11.1646 14.75 10.7299C14.75 10.2951 14.5934 9.92879 14.2802 9.63083C13.967 9.33287 13.582 9.18389 13.125 9.18389C12.6681 9.18389 12.283 9.33287 11.9698 9.63083C11.6566 9.92879 11.5 10.2951 11.5 10.7299C11.5 11.1646 11.6566 11.5309 11.9698 11.8289C12.283 12.1269 12.6681 12.2758 13.125 12.2758ZM13.125 21.298C15.3833 19.427 17.1215 17.5536 18.3396 15.678C19.5576 13.8023 20.1667 12.2217 20.1667 10.936C20.1667 8.90508 19.4872 7.24647 18.1281 5.96015C16.7691 4.67382 15.1014 4.03065 13.125 4.03065C11.1486 4.03065 9.48091 4.67382 8.12187 5.96015C6.76285 7.24647 6.08333 8.90508 6.08333 10.936C6.08333 12.2217 6.69237 13.8023 7.91043 15.678C9.12848 17.5536 10.8667 19.427 13.125 21.298ZM13.125 22.7012C10.3847 20.3876 8.34549 18.2414 7.00728 16.2627C5.66909 14.284 5 12.5084 5 10.936C5 8.51794 5.8191 6.59075 7.4573 5.15444C9.09548 3.71815 10.9847 3 13.125 3C15.2653 3 17.1545 3.71815 18.7927 5.15444C20.4309 6.59075 21.25 8.51794 21.25 10.936C21.25 12.5084 20.5809 14.284 19.2427 16.2627C17.9045 18.2414 15.8653 20.3876 13.125 22.7012Z"
+                              fill="#1D1D1D" />
+                          </g>
+                        </svg>Antalya</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3 w-100" style="max-width: 640px; ">
+              <div class="row g-0">
+                <div class="col-3  m-auto">
+                  <img src="./img/eylul.png" class="img-fluid ms-3 rounded-start" alt="...">
+                </div>
+                <div class="col-9">
+                  <div class="card-body pe-0">
+                    <div class="row text-center text-sm-start text-md-center text-lg-start ">
+                      <h5 class="card-title fs-16 fw-500">Eylül Aytaç</h5>
+                    </div>
+                    <div class="row  text-center">
+                      <p
+                        class="card-text col-12 text-sm-start text-md-center text-lg-start col-sm-6 col-md-12 col-lg-6 purple-text my-auto fw-400 fs-14">
+                        Büyüme Uzmanı</p>
+                      <div class="card-body col-12 col-sm-6 text-md-center text-lg-start col-md-12 col-lg-6 px-0">
+                        <button class="btn profile-button border-0 fs-14 fw-400 mx-auto text-nowrap ">Profili
+                          Görüntüle</button>
+                      </div>
+                    </div>
+                    <div class="row  text-center text-sm-start text-md-center text-lg-start">
+                      <p class="card-text fw-400 ps-1 fs-14"><svg xmlns="http://www.w3.org/2000/svg" width="26"
+                          height="26" viewBox="0 0 26 26" fill="none">
+                          <mask id="mask0_0_424" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="26" height="26">
+                            <rect width="26" height="26" fill="#D9D9D9" />
+                          </mask>
+                          <g mask="url(#mask0_0_424)">
+                            <path
+                              d="M13.125 12.2758C13.582 12.2758 13.967 12.1269 14.2802 11.8289C14.5934 11.5309 14.75 11.1646 14.75 10.7299C14.75 10.2951 14.5934 9.92879 14.2802 9.63083C13.967 9.33287 13.582 9.18389 13.125 9.18389C12.6681 9.18389 12.283 9.33287 11.9698 9.63083C11.6566 9.92879 11.5 10.2951 11.5 10.7299C11.5 11.1646 11.6566 11.5309 11.9698 11.8289C12.283 12.1269 12.6681 12.2758 13.125 12.2758ZM13.125 21.298C15.3833 19.427 17.1215 17.5536 18.3396 15.678C19.5576 13.8023 20.1667 12.2217 20.1667 10.936C20.1667 8.90508 19.4872 7.24647 18.1281 5.96015C16.7691 4.67382 15.1014 4.03065 13.125 4.03065C11.1486 4.03065 9.48091 4.67382 8.12187 5.96015C6.76285 7.24647 6.08333 8.90508 6.08333 10.936C6.08333 12.2217 6.69237 13.8023 7.91043 15.678C9.12848 17.5536 10.8667 19.427 13.125 21.298ZM13.125 22.7012C10.3847 20.3876 8.34549 18.2414 7.00728 16.2627C5.66909 14.284 5 12.5084 5 10.936C5 8.51794 5.8191 6.59075 7.4573 5.15444C9.09548 3.71815 10.9847 3 13.125 3C15.2653 3 17.1545 3.71815 18.7927 5.15444C20.4309 6.59075 21.25 8.51794 21.25 10.936C21.25 12.5084 20.5809 14.284 19.2427 16.2627C17.9045 18.2414 15.8653 20.3876 13.125 22.7012Z"
+                              fill="#1D1D1D" />
+                          </g>
+                        </svg>İstanbul</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="col-4 my-auto">
+
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3 w-100" style="max-width: 640px; ">
+              <div class="row g-0">
+                <div class="col-3  m-auto">
+                  <img src="./img/esin.png" class="img-fluid ms-3 rounded-start" alt="...">
+                </div>
+                <div class="col-9">
+                  <div class="card-body pe-0">
+                    <div class="row text-center text-sm-start text-md-center text-lg-start ">
+                      <h5 class="card-title fs-16 fw-500">Esin Özbek</h5>
+                    </div>
+                    <div class="row  text-center">
+                      <p
+                        class="card-text col-12 text-sm-start text-md-center text-lg-start col-sm-6 col-md-12 col-lg-6 purple-text my-auto fw-400 fs-14">
+                        Kabin Memuru</p>
+                      <div class="card-body col-12 col-sm-6 text-md-center text-lg-start col-md-12 col-lg-6 px-0">
+                        <button class="btn profile-button border-0 fs-14 fw-400 mx-auto text-nowrap ">Profili
+                          Görüntüle</button>
+                      </div>
+                    </div>
+                    <div class="row  text-center text-sm-start text-md-center text-lg-start">
+                      <p class="card-text fw-400 ps-1 fs-14"><svg xmlns="http://www.w3.org/2000/svg" width="26"
+                          height="26" viewBox="0 0 26 26" fill="none">
+                          <mask id="mask0_0_424" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="26" height="26">
+                            <rect width="26" height="26" fill="#D9D9D9" />
+                          </mask>
+                          <g mask="url(#mask0_0_424)">
+                            <path
+                              d="M13.125 12.2758C13.582 12.2758 13.967 12.1269 14.2802 11.8289C14.5934 11.5309 14.75 11.1646 14.75 10.7299C14.75 10.2951 14.5934 9.92879 14.2802 9.63083C13.967 9.33287 13.582 9.18389 13.125 9.18389C12.6681 9.18389 12.283 9.33287 11.9698 9.63083C11.6566 9.92879 11.5 10.2951 11.5 10.7299C11.5 11.1646 11.6566 11.5309 11.9698 11.8289C12.283 12.1269 12.6681 12.2758 13.125 12.2758ZM13.125 21.298C15.3833 19.427 17.1215 17.5536 18.3396 15.678C19.5576 13.8023 20.1667 12.2217 20.1667 10.936C20.1667 8.90508 19.4872 7.24647 18.1281 5.96015C16.7691 4.67382 15.1014 4.03065 13.125 4.03065C11.1486 4.03065 9.48091 4.67382 8.12187 5.96015C6.76285 7.24647 6.08333 8.90508 6.08333 10.936C6.08333 12.2217 6.69237 13.8023 7.91043 15.678C9.12848 17.5536 10.8667 19.427 13.125 21.298ZM13.125 22.7012C10.3847 20.3876 8.34549 18.2414 7.00728 16.2627C5.66909 14.284 5 12.5084 5 10.936C5 8.51794 5.8191 6.59075 7.4573 5.15444C9.09548 3.71815 10.9847 3 13.125 3C15.2653 3 17.1545 3.71815 18.7927 5.15444C20.4309 6.59075 21.25 8.51794 21.25 10.936C21.25 12.5084 20.5809 14.284 19.2427 16.2627C17.9045 18.2414 15.8653 20.3876 13.125 22.7012Z"
+                              fill="#1D1D1D" />
+                          </g>
+                        </svg>İzmir</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="col-4 my-auto">
+
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3 w-100" style="max-width: 640px; ">
+              <div class="row g-0">
+                <div class="col-3  m-auto">
+                  <img src="./img/tolga.png" class="img-fluid ms-3 rounded-start" alt="...">
+                </div>
+                <div class="col-9">
+                  <div class="card-body pe-0">
+                    <div class="row text-center text-sm-start text-md-center text-lg-start ">
+                      <h5 class="card-title fs-16 fw-500">Tolga Derici</h5>
+                    </div>
+                    <div class="row  text-center">
+                      <p
+                        class="card-text col-12 text-sm-start text-md-center text-lg-start col-sm-6 col-md-12 col-lg-6 purple-text my-auto fw-400 fs-14">
+                        Dişçi</p>
+                      <div class="card-body col-12 col-sm-6 text-md-center text-lg-start col-md-12 col-lg-6 px-0">
+                        <button class="btn profile-button border-0 fs-14 fw-400 mx-auto text-nowrap ">Profili
+                          Görüntüle</button>
+                      </div>
+                    </div>
+                    <div class="row  text-center text-sm-start text-md-center text-lg-start">
+                      <p class="card-text fw-400 ps-1 fs-14"><svg xmlns="http://www.w3.org/2000/svg" width="26"
+                          height="26" viewBox="0 0 26 26" fill="none">
+                          <mask id="mask0_0_424" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="26" height="26">
+                            <rect width="26" height="26" fill="#D9D9D9" />
+                          </mask>
+                          <g mask="url(#mask0_0_424)">
+                            <path
+                              d="M13.125 12.2758C13.582 12.2758 13.967 12.1269 14.2802 11.8289C14.5934 11.5309 14.75 11.1646 14.75 10.7299C14.75 10.2951 14.5934 9.92879 14.2802 9.63083C13.967 9.33287 13.582 9.18389 13.125 9.18389C12.6681 9.18389 12.283 9.33287 11.9698 9.63083C11.6566 9.92879 11.5 10.2951 11.5 10.7299C11.5 11.1646 11.6566 11.5309 11.9698 11.8289C12.283 12.1269 12.6681 12.2758 13.125 12.2758ZM13.125 21.298C15.3833 19.427 17.1215 17.5536 18.3396 15.678C19.5576 13.8023 20.1667 12.2217 20.1667 10.936C20.1667 8.90508 19.4872 7.24647 18.1281 5.96015C16.7691 4.67382 15.1014 4.03065 13.125 4.03065C11.1486 4.03065 9.48091 4.67382 8.12187 5.96015C6.76285 7.24647 6.08333 8.90508 6.08333 10.936C6.08333 12.2217 6.69237 13.8023 7.91043 15.678C9.12848 17.5536 10.8667 19.427 13.125 21.298ZM13.125 22.7012C10.3847 20.3876 8.34549 18.2414 7.00728 16.2627C5.66909 14.284 5 12.5084 5 10.936C5 8.51794 5.8191 6.59075 7.4573 5.15444C9.09548 3.71815 10.9847 3 13.125 3C15.2653 3 17.1545 3.71815 18.7927 5.15444C20.4309 6.59075 21.25 8.51794 21.25 10.936C21.25 12.5084 20.5809 14.284 19.2427 16.2627C17.9045 18.2414 15.8653 20.3876 13.125 22.7012Z"
+                              fill="#1D1D1D" />
+                          </g>
+                        </svg>Uşak</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="col-4 my-auto">
+
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3 w-100" style="max-width: 640px; ">
+              <div class="row g-0">
+                <div class="col-3  m-auto">
+                  <img src="./img/bihter.png" class="img-fluid ms-3 rounded-start" alt="...">
+                </div>
+                <div class="col-9">
+                  <div class="card-body pe-0">
+                    <div class="row text-center text-sm-start text-md-center text-lg-start ">
+                      <h5 class="card-title fs-16 fw-500">Bihter Ayda</h5>
+                    </div>
+                    <div class="row  text-center">
+                      <p
+                        class="card-text col-12 text-sm-start text-md-center text-lg-start col-sm-6 col-md-12 col-lg-6 purple-text my-auto fw-400 fs-14">
+                        Pazarlama Uzmanı</p>
+                      <div class="card-body col-12 col-sm-6 text-md-center text-lg-start col-md-12 col-lg-6 px-0">
+                        <button class="btn profile-button border-0 fs-14 fw-400 mx-auto text-nowrap ">Profili
+                          Görüntüle</button>
+                      </div>
+                    </div>
+                    <div class="row  text-center text-sm-start text-md-center text-lg-start">
+                      <p class="card-text fw-400 ps-1 fs-14"><svg xmlns="http://www.w3.org/2000/svg" width="26"
+                          height="26" viewBox="0 0 26 26" fill="none">
+                          <mask id="mask0_0_424" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="26" height="26">
+                            <rect width="26" height="26" fill="#D9D9D9" />
+                          </mask>
+                          <g mask="url(#mask0_0_424)">
+                            <path
+                              d="M13.125 12.2758C13.582 12.2758 13.967 12.1269 14.2802 11.8289C14.5934 11.5309 14.75 11.1646 14.75 10.7299C14.75 10.2951 14.5934 9.92879 14.2802 9.63083C13.967 9.33287 13.582 9.18389 13.125 9.18389C12.6681 9.18389 12.283 9.33287 11.9698 9.63083C11.6566 9.92879 11.5 10.2951 11.5 10.7299C11.5 11.1646 11.6566 11.5309 11.9698 11.8289C12.283 12.1269 12.6681 12.2758 13.125 12.2758ZM13.125 21.298C15.3833 19.427 17.1215 17.5536 18.3396 15.678C19.5576 13.8023 20.1667 12.2217 20.1667 10.936C20.1667 8.90508 19.4872 7.24647 18.1281 5.96015C16.7691 4.67382 15.1014 4.03065 13.125 4.03065C11.1486 4.03065 9.48091 4.67382 8.12187 5.96015C6.76285 7.24647 6.08333 8.90508 6.08333 10.936C6.08333 12.2217 6.69237 13.8023 7.91043 15.678C9.12848 17.5536 10.8667 19.427 13.125 21.298ZM13.125 22.7012C10.3847 20.3876 8.34549 18.2414 7.00728 16.2627C5.66909 14.284 5 12.5084 5 10.936C5 8.51794 5.8191 6.59075 7.4573 5.15444C9.09548 3.71815 10.9847 3 13.125 3C15.2653 3 17.1545 3.71815 18.7927 5.15444C20.4309 6.59075 21.25 8.51794 21.25 10.936C21.25 12.5084 20.5809 14.284 19.2427 16.2627C17.9045 18.2414 15.8653 20.3876 13.125 22.7012Z"
+                              fill="#1D1D1D" />
+                          </g>
+                        </svg>Eskişehir</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row mb-4">
+        <h2 class="text-center fs-32">Öne Çıkan Üye İşveren Firmalarımız</h2>
+      </div>
+    </div>
+    <div class="container text-center my-3">
+      <div class="row  justify-content-center">
+        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+        
+        
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item">
+              <div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/flormar.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flormar</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 2</a>
+                  </div>
+                </div>
+              </div>
+            <div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/abalioglu.png" class="img-fluid"></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Abalıoğlu</h5>
+                    <p class="card-text">İzmir</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 4</a>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/webtekno.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Webtekno</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 1</a>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/denimeks.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Denimeks</h5>
+                    <p class="card-text">Gaziantep</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 3</a>
+                  </div>
+                </div>
+              </div></div>
+            <div class="carousel-item active">
+              <div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/abalioglu.png" class="img-fluid"></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Abalıoğlu</h5>
+                    <p class="card-text">İzmir</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 4</a>
+                  </div>
+                </div>
+              </div>
+            <div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/webtekno.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Webtekno</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 1</a>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/denimeks.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Denimeks</h5>
+                    <p class="card-text">Gaziantep</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 3</a>
+                  </div>
+                </div>
+              </div><div class=" col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/flormar.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flormar</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 2</a>
+                  </div>
+                </div>
+              </div></div>
+            <div class="carousel-item">
+              <div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/webtekno.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Webtekno</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 1</a>
+                  </div>
+                </div>
+              </div>
+            <div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/denimeks.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Denimeks</h5>
+                    <p class="card-text">Gaziantep</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 3</a>
+                  </div>
+                </div>
+              </div><div class=" col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/flormar.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flormar</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 2</a>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/abalioglu.png" class="img-fluid"></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Abalıoğlu</h5>
+                    <p class="card-text">İzmir</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 4</a>
+                  </div>
+                </div>
+              </div></div>
+            <div class="carousel-item">
+              <div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/denimeks.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Denimeks</h5>
+                    <p class="card-text">Gaziantep</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 3</a>
+                  </div>
+                </div>
+              </div>
+            <div class=" col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/flormar.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flormar</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 2</a>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/abalioglu.png" class="img-fluid"></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Abalıoğlu</h5>
+                    <p class="card-text">İzmir</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 4</a>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/webtekno.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Webtekno</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 1</a>
+                  </div>
+                </div>
+              </div></div>
+            <div class="carousel-item">
+              <div class=" col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/flormar.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flormar</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 2</a>
+                  </div>
+                </div>
+              </div>
+            <div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/abalioglu.png" class="img-fluid"></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Abalıoğlu</h5>
+                    <p class="card-text">İzmir</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 4</a>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/webtekno.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Webtekno</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 1</a>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/denimeks.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Denimeks</h5>
+                    <p class="card-text">Gaziantep</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 3</a>
+                  </div>
+                </div>
+              </div></div>
+            <div class="carousel-item">
+              <div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/abalioglu.png" class="img-fluid"></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Abalıoğlu</h5>
+                    <p class="card-text">İzmir</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 4</a>
+                  </div>
+                </div>
+              </div>
+            <div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/webtekno.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Webtekno</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 1</a>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/denimeks.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Denimeks</h5>
+                    <p class="card-text">Gaziantep</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 3</a>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/flormar.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flormar</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 2</a>
+                  </div>
+                </div>
+              </div></div>
+            <div class="carousel-item">
+              <div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/webtekno.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Webtekno</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 1</a>
+                  </div>
+                </div>
+              </div>
+            <div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/denimeks.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Denimeks</h5>
+                    <p class="card-text">Gaziantep</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 3</a>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/flormar.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flormar</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 2</a>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/abalioglu.png" class="img-fluid"></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Abalıoğlu</h5>
+                    <p class="card-text">İzmir</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 4</a>
+                  </div>
+                </div>
+              </div></div>
+            <div class="carousel-item">
+              <div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/denimeks.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Denimeks</h5>
+                    <p class="card-text">Gaziantep</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 3</a>
+                  </div>
+                </div>
+              </div>
+            <div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/flormar.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flormar</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 2</a>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/abalioglu.png" class="img-fluid"></div>
+                  <div class="card-body">
+                    <h5 class="card-title">Abalıoğlu</h5>
+                    <p class="card-text">İzmir</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 4</a>
+                  </div>
+                </div>
+              </div><div class="col-lg-3 col">
+                <div class="card text-center mb-3">
+                  <div class="card-img"> <img src="./img/webtekno.png" class="img-fluid"> </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Webtekno</h5>
+                    <p class="card-text">İstanbul</p>
+                    <a href="#" class="btn btn-slider">Açık Pozisyon - 1</a>
+                  </div>
+                </div>
+              </div></div>
+          </div> <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> </a> <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col-md-4 mb-3">
+        <img style="margin-left: -8px;" src="./img/main_logo.svg" width="210px" alt="">
+        <h5 class="fw-500 fs-16 pt-3">Bize Ulaşın</h5>
+        <a class="text-red text-decoration-none" href="tel:08508000045"> 0850 800 00 45</a>
+        <p class="fw-400 fs-14 pt-3">Çınarlı Mah. Şehit Fethi Sekin Cad.No:1 Kat:19 Martı Tower Konak/İzmir</p>
+        <a class="fw-400 fs-14 text-body-secondary text-decoration-none" href="mailto:info@guleryuzgroup.com">
+          info@guleryuzgroup.com</a>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h5 class="fw-500 fs-16 footer-header-color pb-3">Adaylar</h5>
+        <ul class="nav flex-column lh-lg">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">İş Ara</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">Giriş Yap</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">Kayıt Ol</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">CV Yükle</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">CV Hazırla</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">CV Danışmanlığı</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h5 class="fw-500 fs-16 footer-header-color pb-3">Staj Ara/Stajyer Ara</h5>
+        <ul class="nav flex-column lh-lg">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">Staj Ara</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">Stajyer Ara</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">CV Yükle</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">CV Hazırla</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h5 class="fw-500 fs-16 footer-header-color pb-3">İşverenler</h5>
+        <ul class="nav flex-column lh-lg">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14 ">Aday Ara</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">Ücretsiz Üye Ol</a>
+          </li>
+          <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">Giriş Yap</a></li>
+          <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">Üyelik
+              Paketleri</a></li>
+          <li class="nav-item mb-2  "><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">Başvuru Formu</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h5 class="fw-500 fs-16 footer-header-color pb-3">Kurumsal</h5>
+        <ul class="nav flex-column lh-lg">
+          <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">Hakkımızda</a></li>
+          <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">Hizmetlerimiz</a>
+          </li>
+          <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">Sık Sorulan
+              Sorular</a></li>
+          <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">Franchise
+              Başvurusu</a></li>
+          <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">Kolay İş
+              Rehberi</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 footer-text-color fw-500 fs-14">İletişim</a></li>
+        </ul>
+      </div>
+
+    </footer>
+    <div class="container">
+      <footer class="d-flex flex-wrap  align-items-center py-3 my-4 border-top">
+        <p class="col-md-8 mb-0 text-body-secondary fw-400 fs-14">© 2023 Tüm hakları saklıdır. Kolay İş Ara bir <a
+            class="fw-400 fw-bold fs-14 text-decoration-none text-dark text-bold" href="">GÜLERYÜZ GROUP</a> Projesidir.
+        </p>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" target="_blank" class="nav-link px-2 text-body-secondary"><img
+                src="./img/icons8-facebook.png" alt=""></a></li>
+          <li class="nav-item"><a href="#" target="_blank" class="nav-link px-2 text-body-secondary"><img
+                src="./img/icons8-twitter.png" alt=""></a></li>
+          <li class="nav-item"><a href="#" target="_blank" class="nav-link px-2 text-body-secondary"><img
+                src="./img/icons8-linkedin.png" alt=""></a></li>
+          <li class="nav-item"><a href="#" target="_blank" class="nav-link px-2 text-body-secondary"><img
+                src="./img/icons8-instagram.png" alt=""></a></li>
+          <li class="nav-item"><a href="#" target="_blank" class="nav-link px-2 text-body-secondary"><img
+                src="./img/icons8-youtube.png" alt=""></a></li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+  <script>
+    let items = document.querySelectorAll('.carousel .carousel-item')
+  
+      items.forEach((el) => {
+        const minPerSlide = 4
+        let next = el.nextElementSibling
+        for (var i=1; i<minPerSlide; i++) {
+          if (!next) {
+              // wrap carousel by using first child
+              next = items[0]
+          }
+          let cloneChild = next.cloneNode(true)
+          el.appendChild(cloneChild.children[0])
+          next = next.nextElementSibling
+      }
+  })
+    </script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
